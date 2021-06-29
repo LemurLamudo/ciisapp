@@ -43,7 +43,7 @@
     // credenciales base de datos   =>  desarrollo
     define('LDB_ENGINE' ,   'mysql');
     define('LDB_HOST'   ,   'localhost');
-    define('LDB_NAME'   ,   'testNuami');
+    define('LDB_NAME'   ,   'ciisapp');
     define('LDB_USER'   ,   'root');
     define('LDB_PASS'   ,   '');
     define('LDB_CHARSET',   'utf8');
