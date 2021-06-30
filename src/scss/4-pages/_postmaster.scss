@@ -1,0 +1,78 @@
+.about-centered {
+  text-align: center;
+
+  h2,
+  p {
+    padding-bottom: 3rem;
+  }
+}
+
+.page-section {
+  color: $white;
+  background-color: #1281e8;
+
+  > * > .row {
+    align-items: center;
+  }
+}
+
+.schedule {
+  &__event {
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+    border-bottom: 1px solid #acacac;
+    &--time {
+      flex-basis: 20%;
+      font-size: 1.8rem;
+
+      &-dash {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 20px;
+        margin: 20px 0;
+        margin-left: 36px;
+        background-color: #001131;
+      }
+    }
+
+    &--info {
+      flex: 1;
+      color: $secondary;
+
+      &-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    &--extra {
+      flex-basis: 10rem;
+
+      .btn {
+        font-size: 1.4rem;
+        padding: 0;
+        border: none;
+        display: flex;
+
+        svg {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.btn-list {
+  flex-direction: column;
+  padding: 0 12rem;
+
+  .btn {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}

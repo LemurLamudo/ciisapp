@@ -1,0 +1,96 @@
+.btn {
+  display: inline-block;
+  background-color: $blue;
+  padding: 1.5rem 3rem;
+  color: $white;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  font-family: "Montserrat", sans-serif;
+
+  &-rounded {
+    border-radius: 0.8rem;
+  }
+
+  &.btn-outline {
+    background: transparent;
+    border-color: $blue;
+    color: $blue;
+  }
+
+  &:hover {
+    background: $white;
+    border: 1px solid $white;
+    color: $blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-hero {
+  @include tablet {
+    width: 100%;
+    padding: 1.7rem 3rem;
+  }
+}
+
+.input-group-btn {
+  border-radius: 0 2px 2px 0;
+  min-width: 162px;
+  min-height: 53px;
+  padding: 1.5rem 2rem;
+  position: relative;
+
+  &:hover {
+    background: #1633ff;
+    // border: 1px solid #1633ff;
+    color: $white;
+  }
+
+  &.loading {
+    color: transparent;
+
+    &::after {
+      content: "";
+      animation: spin 0.5s linear infinite;
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 3px solid #fff;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-radius: 50%;
+    }
+  }
+
+  @include tablet {
+    border-radius: 2px;
+  }
+}
+
+.btn-link {
+  padding: 0;
+  color: $primary;
+  font-weight: 600;
+  svg {
+    vertical-align: sub;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

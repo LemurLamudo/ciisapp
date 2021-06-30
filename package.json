@@ -1,0 +1,31 @@
+{
+  "name": "ciisapp",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Pagina principal XXII CIIS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --development",
+    "build": "gulp build --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NainAcero/ciisapp.git"
+  },
+  "author": "ESIS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NainAcero/ciisapp/issues"
+  },
+  "homepage": "https://github.com/NainAcero/ciisapp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-mode": "^1.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "sass": "^1.35.1"
+  }
+}

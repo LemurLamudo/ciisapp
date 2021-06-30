@@ -1,0 +1,151 @@
+.hero-info {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 700px;
+    justify-content: center;
+    z-index: 5;
+
+    .hero-contacts {
+        position: relative;
+        display: flex;
+        text-align: left;
+        padding: 4.5rem 3.5rem;
+        background-color: $white;
+        color: $secondary;
+        width: 865px;
+        
+        .hero-contact {
+            display: flex;
+            padding: 0;
+            font-size: 1.4rem;
+            align-items: center;
+            font-weight: 500;
+
+            svg {
+                margin-right: 2.5rem;
+                width: 40px;
+                height: 40px;
+
+                @include laptop {
+                    margin-bottom: 1.5rem;
+                    margin-right: 0;
+                }
+
+                @include tablet {
+                    margin-right: 3rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            &:not(:last-child)::after {
+                content: "";
+                display: inline-block;
+                margin: 0 3.25rem;
+                width: 1px;
+                height: 35px;
+                background: #9ba0a3;
+
+                @include laptop {
+                    display: none;
+                }
+            }
+
+            @include laptop {
+                flex-direction: column;
+                align-items: center;
+                margin: 0 1.5rem;
+            }
+
+            @include tablet {
+                flex-direction: row;
+                font-size: 1.6rem;
+                margin: 0;
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        @include laptop {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 4.5rem 1rem;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            width: 100%;
+            text-align: left;
+            align-items: initial;
+            padding: 4rem 4rem 0;
+            background-color: transparent;
+        }
+    }
+
+    @include desktop {
+        top: calc(100vh + 10px);
+    }
+
+    @include laptop {
+        top: 640px;
+        z-index: 10;
+    }
+
+    @include tablet {
+        top: unset;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.about {
+    margin-top: 8rem;
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        padding: 0 3rem;
+        
+        .about-video {
+            @include laptop {
+                flex: 1;
+            }
+        }
+    
+        .about-info {
+            padding: 4.8rem 4.8rem;
+            background-color: $white;
+
+            @include laptop {
+                flex: 1;
+            }
+
+            @include tablet {
+                background-color: transparent;
+                padding: 1rem 0 3rem;
+                text-align: center;
+            }
+        }
+
+        @include laptop {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 653px;
+        }
+
+        @include tablet {
+            width: unset;
+            padding: 0;
+        }
+    }
+
+    @include tablet {
+        margin-top: 0;
+    }
+}

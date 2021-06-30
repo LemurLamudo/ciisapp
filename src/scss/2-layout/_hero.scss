@@ -1,0 +1,101 @@
+.hero {
+  background: linear-gradient(rgba(26, 27, 62, 1), rgba(5, 21, 80, 0.75)),
+    url(../images/bg.jpg) center center;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  position: relative;
+  height: 770px;
+  padding-top: 8.4rem;
+
+  .hero-content {
+    max-width: 70rem;
+    margin: 7rem 0;
+    h1 {
+      margin-bottom: 2rem;
+
+      @include laptop {
+        font-size: 4.2rem;
+      }
+
+      @include tablet {
+        font-size: 3.4rem;
+      }
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    .sub-header {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 1.5rem;
+        background: $white;
+        height: 25px;
+        width: 3px;
+        vertical-align: bottom;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      @include laptop {
+        font-size: 1.8rem;
+      }
+    }
+
+    .success-message {
+      display: flex;
+      align-items: center;
+
+      .check-icon {
+        margin-right: 1rem;
+      }
+
+      .confirmation-message {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+
+    @include laptop {
+      margin: 6rem 0 18rem;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      margin: 6rem 0 12rem;
+    }
+  }
+
+  @include desktop {
+    height: calc(100vh + 75px);
+  }
+
+  @include laptop {
+    height: unset;
+    padding-top: 6.7rem;
+  }
+}
+
+.hero-sec {
+  position: relative;
+}
+
+.hero-sec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(5, 21, 80, 0.5);
+}

@@ -1,0 +1,36 @@
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+
+    .form-input {
+        font-size: 1.5rem;
+        border-radius: 2px 0 0 2px;
+        border: none;
+        padding: 1.6rem;
+        padding-right: 4.2rem;
+        height: 53px;
+        box-shadow: none;
+        color: #333;
+        transition: none;
+        outline: none;
+        display: block;
+        width: 100%;
+        background-color: $white;
+        font-weight: 500;
+
+        @include tablet {
+            border-radius: 2px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include tablet {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}

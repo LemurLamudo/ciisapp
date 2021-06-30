@@ -1,27 +1,2 @@
-(function() {
-    'use-strict';
-
-    const nav = document.querySelector('header');
-    const trailer = document.querySelector('.modal-video');
-
-    window.addEventListener('scroll',() => {
-        if(!nav.classList.contains('active')) (window.pageYOffset > 0) ? nav.classList.add('fixed') : nav.classList.remove('fixed');
-    });
-
-    document.querySelector('.menu-btn').addEventListener('click', () => {
-        nav.classList.toggle('active');
-        nav.classList.toggle('fixed');
-    })
-
-    document.querySelector('div.nav-link').addEventListener('click', () => {
-        let submenu = document.querySelector('.sub-menu');    
-        submenu.classList.toggle('active');
-        submenu.classList.contains('active') ? document.querySelector('div.nav-link svg path').setAttribute("d", "M112 328l144-144 144 144"): document.querySelector('div.nav-link svg path').setAttribute("d", "M112 184l144 144 144-144");
-    });
-
-    document.querySelector('.video-selector').addEventListener('click', () => trailer.classList.add('active'));
-    document.querySelector('.modal-video .close').addEventListener('click', () => {
-        trailer.classList.remove('active');
-        player.stop();
-    });
-}());
+!function(){const e=document.querySelector("header");window.addEventListener("scroll",(()=>{e.classList.contains("active")||(window.pageYOffset>0?e.classList.add("fixed"):e.classList.remove("fixed"))})),document.querySelector(".menu-btn").addEventListener("click",(()=>{e.classList.toggle("active"),e.classList.toggle("fixed")})),document.querySelector("div.nav-link").addEventListener("click",(()=>{let e=document.querySelector(".sub-menu");e.classList.toggle("active"),e.classList.contains("active")?document.querySelector("div.nav-link svg path").setAttribute("d","M112 328l144-144 144 144"):document.querySelector("div.nav-link svg path").setAttribute("d","M112 184l144 144 144-144")}))}();
+//# sourceMappingURL=main.js.map
