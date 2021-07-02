@@ -54,6 +54,7 @@
                             <li class="nav-item"><a class="nav-link" href="<?php echo BASEPATH?>">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="postmaster">Postmaster</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
                              <li class="nav-item"><div class="nav-link">Ediciones Anteriores <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
                                 <ul class="sub-menu">
                                 <li><a href="" class="sub">XIX CIIS</a></li>
