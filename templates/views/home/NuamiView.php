@@ -61,7 +61,7 @@
         </div>
         <section class="about">
             <div class="container">
-                <div class="row">
+                <div class="card-row">
                     <div class="about-video">
                         <div class="video-selector">
                             <img src="<?php echo IMAGES.'thumb_2.jpg' ?>" alt="ciis presentacion">

@@ -1,0 +1,98 @@
+.timetable {
+  display: grid;
+  grid-template-areas:
+    ". week"
+    "time content";
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  width: 100vw;
+  height: 100vh;
+  .weekend {
+    background: lighten($porcelain, 5%);
+    color: lighten($cutty-sark, 20%);
+  }
+  &__week-names {
+    grid-area: week;
+    display: grid;
+    // 7 days a week
+    grid-template-columns: repeat(5, 1fr);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: $gray;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__time-interval {
+    grid-area: time;
+    display: grid;
+    // 6 time intervals
+    grid-template-rows: repeat(6, 1fr);
+    font-size: 13px;
+    font-weight: 600;
+    color: $gray;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    & > div {
+      box-shadow: inset 1px 0 0 $border-color, inset 0 1px 0 0 $border-color;
+    }
+  }
+
+  .row-2 {
+    grid-row-end: span 2;
+  }
+  .row-3 {
+    grid-row-end: span 3;
+  }
+
+  &__session {
+    padding: 1.6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-time {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    &-name {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    &-presenter {
+      font-size: 1.35rem;
+    }
+
+    &.attended {
+      background-color: #ddf7e4;
+    }
+
+    &.skipped {
+      background-color: #fee5e3;
+    }
+  }
+}

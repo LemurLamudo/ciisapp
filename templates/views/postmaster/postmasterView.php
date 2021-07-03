@@ -8,7 +8,7 @@
   <section class="about-centered">
       <div class=" container">
   
-          <div class="row">
+          <div class="card-row">
               <div class="col-lg-12 col-md-12 col-12">
                   <div class="text-justify">
                       <h2 class="text-left title-sub"> ¿Qué es el POSTMASTER?</h2>
@@ -33,7 +33,7 @@
   
   <section class="page-section">
       <div class="container">
-          <div class="row">
+          <div class="card-row">
               <div class="col-lg-6 col-md-12 col-12">
                   <div class="text-content text-justify">
                       <h2 class="text-left text-white"> CONVERSATORIO Y DEBATE: Situación actual y trabajo virtual</h2>
@@ -45,7 +45,7 @@
                   </div>
               </div>
               <div class="col-lg-6 col-md-12 col-12 text-center">
-                  <div class="row btn-list">
+                  <div class="card-row btn-list">
                       <div class="btn btn-rounded text-center">
                       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="50" fill="#fff"><title>Logo Facebook</title><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
                           <div class="text-center mt-4">
@@ -108,7 +108,7 @@
   <section class="courses section" style="background: #fff">
       <div class="container">
           <h2 class="text-left section-title">PONENTES</h2>
-          <div class="row">
+          <div class="card-row">
               <div class="col-12 pl-5 pr-5">
                   <div class="card-list">
                       <!-- Single Course -->

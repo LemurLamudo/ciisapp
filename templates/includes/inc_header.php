@@ -27,8 +27,7 @@
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-SemiBold.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <link rel="stylesheet" href="<?php echo CSS.'main.css' ?>">
-    
+    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1625104620519' ?>">    
 </head>
 <header>
         <div class="container">
@@ -54,14 +53,14 @@
                             <li class="nav-item"><a class="nav-link" href="<?php echo BASEPATH?>">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="postmaster">Postmaster</a></li>
-                            <li class="nav-item"><a class="nav-link" href="login">Login</a></li>
-                             <li class="nav-item"><div class="nav-link">Ediciones Anteriores <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
-                                <ul class="sub-menu">
-                                <li><a href="" class="sub">XIX CIIS</a></li>
-                                <li><a href="" class="sub">XX CIIS</a></li>
-                                <li><a href="" class="sub">XXI CIIS</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><div class="nav-link">Ediciones Anteriores <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
+                            <ul class="sub-menu">
+                              <li><a href="" class="sub">XIX CIIS</a></li>
+                              <li><a href="" class="sub">XX CIIS</a></li>
+                              <li><a href="" class="sub">XXI CIIS</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item"><a class="btn btn-header" href="login">Inicia sesión</a></li>
                         </ul>
                     </nav>
                 </div>

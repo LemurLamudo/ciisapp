@@ -14,8 +14,10 @@
 // 3 - COMPONENTS
 @import "3-components/buttons";
 @import "3-components/cards";
+@import "3-components/forms";
 @import "3-components/countdown";
 @import "3-components/video";
+@import "3-components/timetable";
 
 // 4 - PAGES
 @import "4-pages/home";
@@ -24,3 +26,4 @@
 //5 - HELPERS
 @import "5-utils/colors";
 @import "5-utils/typography";
+@import "5-utils/spacing";
