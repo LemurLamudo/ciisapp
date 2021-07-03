@@ -12,7 +12,7 @@
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'https://ciis-app.herokuapp.com/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'https://ciisapp.herokuapp.com/');
 
     // rutas de directorios y archivos =>
 
