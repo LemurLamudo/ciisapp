@@ -60,21 +60,30 @@ $(document).ready(function() {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Registrado Correctamente',
+                    title: res.msg,
+                    showConfirmButton: false,
+                    timer: 2500
+                })
+            }else if(res.status == 200){
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'warning',
+                    title: res.msg,
                     showConfirmButton: false,
                     timer: 1500
                 })
-
-                document.getElementById("email").value = "";
             }
+            document.getElementById("email").value = "";
 
         }).fail(function(err) {
-
-            Swal.fire(
-              'Revisar!',
-              'Usuario ya preinscrito!',
-              'warning'
-            )
+            console.log(err);
+            Swal.fire({
+                position: 'top-end',
+                icon: 'warning',
+                title: err,
+                showConfirmButton: false,
+                timer: 1500
+            })
   
         }).always(function() {
 
