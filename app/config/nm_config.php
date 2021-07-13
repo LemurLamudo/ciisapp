@@ -12,7 +12,7 @@
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'https://ciisapp.herokuapp.com/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'http://143.244.148.133/');
 
     // rutas de directorios y archivos =>
 
@@ -43,7 +43,7 @@
     // credenciales base de datos   =>  desarrollo
     define('LDB_ENGINE' ,   'mysql');
     define('LDB_HOST'   ,   'localhost');
-    define('LDB_NAME'   ,   'ciisapp');
+    define('LDB_NAME'   ,   'ciis2020');
     define('LDB_USER'   ,   'root');
     define('LDB_PASS'   ,   '');
     define('LDB_CHARSET',   'utf8');

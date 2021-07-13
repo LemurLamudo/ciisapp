@@ -30,9 +30,12 @@
 
         function preinscripcion(){
             try{
+                $csrf = new Csrf();
+                $token = $csrf->get_token();
+
                 $usuario           = new usuarioModel();
                 $usuario->email    = $_POST['email'];
-                $csrf = new Csrf();
+              
                 $message = '
                 <html>
                 <head>
@@ -189,7 +192,7 @@
                                                   <tr>
                                                     <td
                                                       style="font-size: 14px; vertical-align: top; background-color: #3f4ce7; border-radius: 5px; text-align: center;">
-                                                      <a href="'.URL.'auth/register?token='.$csrf->get_token() .'" target="_blank"
+                                                      <a href="'.URL.'auth/register?email='.$_POST['email'].'&token='.$token.'" target="_blank"
                                                         style="display: inline-block; color: #ffffff; background-color: #3f4ce7; border: solid 1px #3f4ce7; border-radius: 2px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 15px 30px;border-color: #3f4ce7;">Confirmar
                                                         preinscripción</a>
                                                     </td>
@@ -245,11 +248,12 @@
                 </body>
                 
                 </html>';
+                $usuario->token    = $token;
 
                 if($usuario->one()){
                     json_output(json_build(200, null, "Correo ya registrado!"));
                 }
-                
+
                 if(!$id = $usuario->add()){
                     json_output(json_build(400, null, "Hubo error al guardar el registro!"));
                 }
@@ -275,7 +279,33 @@
                 $mail->Send();
 
                 json_output(json_build(201, null, "Revise su correo Electrónico"));
+            }catch(Exception $e){
+                json_output(json_build(400, null, $e->getMessage()));
+            }
+        }
 
+        function register(){
+            try{
+                $csrf = new Csrf();
+                $usuario           = new usuarioModel();
+                $usuario->token    = $_POST['token'];
+
+                $valid = $csrf->validate($_POST['token'], true);
+                if($valid) json_output(json_build(400, null, "Registro caducado!"));
+
+                $data  = $usuario->token();
+                if(!$data) json_output(json_build(400, null, "Token no encontrado!"));
+                
+                $usuario->id                = $data['id'];
+                $usuario->name              = $_POST['name'];
+                $usuario->type_document     = $_POST['tipo_doc'];
+                $usuario->number_document   = $_POST['number'];
+
+                if($usuario->update()){
+                    json_output(json_build(200, null, "Usuario " . $usuario->name . " registrado!"));
+                }
+
+                json_output(json_build(400, "Ocurrio un Error!"));
             }catch(Exception $e){
                 json_output(json_build(400, null, $e->getMessage()));
             }
@@ -286,6 +316,7 @@
                 $postmaster         = new postmasterModel();
                 $list_postmaster    = $postmaster->all();
                 json_output(json_build(201, $list_postmaster));
+
             }catch(Exception $e){
                 json_output(json_build(400, null, $e->getMessage()));
             }
