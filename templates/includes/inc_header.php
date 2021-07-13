@@ -60,7 +60,7 @@
                               <li><a href="" class="sub">XXI CIIS</a></li>
                             </ul>
                           </li>
-                          <li class="nav-item"><a class="btn btn-header" href="login">Inicia sesión</a></li>
+                          <li class="nav-item"><a class="btn btn-header" href="auth">Inicia sesión</a></li>
                         </ul>
                     </nav>
                 </div>

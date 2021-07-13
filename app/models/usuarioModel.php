@@ -10,6 +10,7 @@
         public $number_document;
         public $phone;
         public $photo;
+        public $token;
         public $password;
 
         /**
@@ -18,10 +19,11 @@
          * @return @id
          */
         public function add(){
-            $sql = 'INSERT INTO users(email) VALUES(:email)';
+            $sql = 'INSERT INTO users(email, token) VALUES(:email, :token)';
 
             $user = [
-                'email'     =>  $this->email
+                'email'     =>  $this->email,
+                'token'     =>  $this->token,
             ];
 
             try{
@@ -33,6 +35,7 @@
 
         /**
          * Busca un Usuario
+         * @return Usuario
          */
         public function one(){
             $sql = 'SELECT * FROM users WHERE email = :email LIMIT 1';
@@ -40,6 +43,38 @@
             try{
                 return ($rows = parent::query($sql , ['email' => $this->email])) ? $rows[0] : false;
             } catch(Exception $e) {
+                throw $e;
+            }
+        }
+
+        /**
+         * Busca un Token
+         * @return Usuario
+         */
+        public function token(){
+            $sql = 'SELECT * FROM users WHERE token = :token LIMIT 1';
+
+            try{
+                return ($rows = parent::query($sql , ['token' => $this->token])) ? $rows[0] : false;
+            } catch(Exception $e) {
+                throw $e;
+            }
+        }
+
+        public function update(){
+
+            $sql = 'UPDATE users SET name=:name, type_document=:type_document, number_document=:number_document WHERE id=:id';
+
+            $data = [
+                'id'                =>  $this->id,
+                'name'              =>  $this->name,
+                'type_document'     =>  $this->type_document,
+                'number_document'   =>  $this->number_document
+            ];
+    
+            try{
+                return (parent::query($sql, $data)) ? true : false;
+            } catch (Exception $e) {
                 throw $e;
             }
         }

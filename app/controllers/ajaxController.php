@@ -30,13 +30,17 @@
 
         function preinscripcion(){
             try{
+                $csrf = new Csrf();
+                $token = $csrf->get_token();
+
                 $usuario           = new usuarioModel();
                 $usuario->email    = $_POST['email'];
+                $usuario->token    = $token;
 
                 if($usuario->one()){
                     json_output(json_build(200, null, "Correo ya registrado!"));
                 }
-                
+
                 if(!$id = $usuario->add()){
                     json_output(json_build(400, null, "Hubo error al guardar el registro!"));
                 }
@@ -55,16 +59,41 @@
                 // $mail->AddAddress('a_nacerom@unjbg.edu.pe');
                 $mail->AddAddress($usuario->email);
 
-                $csrf = new Csrf();
                 $mail->isHTML(true);
                 $mail->Subject = 'Here is the subject';
-                $mail->Body    = URL.'auth/register?token='.$csrf->get_token();
+                $mail->Body    = URL.'auth/register?email='.$_POST['email'].'&token='.$token;
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                 $mail->Send();
 
                 json_output(json_build(201, null, "Revise su correo Electrónico"));
+            }catch(Exception $e){
+                json_output(json_build(400, null, $e->getMessage()));
+            }
+        }
 
+        function register(){
+            try{
+                $csrf = new Csrf();
+                $usuario           = new usuarioModel();
+                $usuario->token    = $_POST['token'];
+
+                $valid = $csrf->validate($_POST['token'], true);
+                if($valid) json_output(json_build(400, null, "Registro caducado!"));
+
+                $data  = $usuario->token();
+                if(!$data) json_output(json_build(400, null, "Token no encontrado!"));
+                
+                $usuario->id                = $data['id'];
+                $usuario->name              = $_POST['name'];
+                $usuario->type_document     = $_POST['tipo_doc'];
+                $usuario->number_document   = $_POST['number'];
+
+                if($usuario->update()){
+                    json_output(json_build(200, null, "Usuario " . $usuario->name . " registrado!"));
+                }
+
+                json_output(json_build(400, "Ocurrio un Error!"));
             }catch(Exception $e){
                 json_output(json_build(400, null, $e->getMessage()));
             }
@@ -75,6 +104,7 @@
                 $postmaster         = new postmasterModel();
                 $list_postmaster    = $postmaster->all();
                 json_output(json_build(201, $list_postmaster));
+
             }catch(Exception $e){
                 json_output(json_build(400, null, $e->getMessage()));
             }

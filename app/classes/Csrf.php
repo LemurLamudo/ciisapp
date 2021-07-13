@@ -4,7 +4,7 @@
         private $length = 32;
         private $token;
         private $token_expiration;
-        private $expiration_time = 60 * 5;
+        private $expiration_time = 60;
 
         public function __construct()
         {
