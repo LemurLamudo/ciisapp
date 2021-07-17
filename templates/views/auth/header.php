@@ -28,7 +28,10 @@
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-SemiBold.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
 	<link href="<?php echo CSS.'app.css' ?>" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1625104620519' ?>">    
+  <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1625104620519' ?>">  
+
+  <link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/alertify.min.css' ?>" />  
+  <link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/themes/default.min.css' ?>" /> 
 </head>
 
 <body>

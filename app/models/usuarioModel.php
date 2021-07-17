@@ -61,6 +61,10 @@
             }
         }
 
+        /**
+         * Update User
+         * @return Usuario
+         */
         public function update(){
 
             $sql = 'UPDATE users SET name=:name, type_document=:type_document, number_document=:number_document WHERE id=:id';
@@ -73,8 +77,22 @@
             ];
     
             try{
-                return (parent::query($sql, $data)) ? true : false;
+                return ($rows = parent::query($sql, $data)) ? $rows[0] : false;
             } catch (Exception $e) {
+                throw $e;
+            }
+        }
+
+        /**
+         * Update User
+         * @return Usuario
+         */
+        public function signIn(){
+            $sql = 'SELECT * FROM users WHERE email = :email and number_document = :number_document LIMIT 1';
+
+            try{
+                return ($rows = parent::query($sql , ['email' => $this->email, 'number_document' => $this->number_document])) ? $rows[0] : false;
+            } catch(Exception $e) {
                 throw $e;
             }
         }

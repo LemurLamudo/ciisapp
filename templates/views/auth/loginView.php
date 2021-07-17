@@ -1,4 +1,8 @@
-<?php require_once 'header.php'; ?>
+<?php 
+  $csrf = new Csrf();
+  $token = $csrf->get_token();
+  require_once 'header.php';
+?>
   <main>
     <div>
       <div class="row vh-100">
@@ -12,10 +16,10 @@
             <div class="col-md-10">
               <h2 class="text-center fw-bold">Iniciar sesión</h2>
               <div class="mt-5">
-                  <form>
+                  <form class="bee_add_sigIn">
                       <div>
                           <div class="font-bold form-label">Email</div>
-                          <input class="form-input py-4 px-5" type="email">
+                          <input class="form-input py-4 px-5" type="email" name="email" id="email">
                       </div>
                       <div class="mt-4">
                           <div class="flex justify-between items-center">
@@ -23,8 +27,9 @@
                                   Contraseña
                               </div>
                           </div>
-                            <input class="form-input py-4 px-5" type="password">
+                            <input class="form-input py-4 px-5" type="password" name="number" id="number">
                         </div>
+                        <input type="hidden" name="token" id="token" value="<?php echo $token ?>">
                         <div class="form-foot">
                           <label class="checkbox" for="rec">
                               <input type="checkbox" id="rec">
@@ -33,7 +38,7 @@
                           <a href="#" class="login-help">¿Olvidaste tu contraseña?</a>
                         </div>
                         <div class="mt-5">              
-                            <button class="btn btn-primary w-100">
+                            <button class="btn btn-primary w-100" type="submit">
                                 Acceder
                             </button>
                         </div>
@@ -47,9 +52,9 @@
   </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="<?php echo JS.'app.js' ?>"></script>
   <script src="<?php echo JS.'auth/login.js' ?>"></script>
+  <script src="<?php echo PLUGINS.'alertify/alertify.min.js' ?>"></script>
 </body>
 
 </html>

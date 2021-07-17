@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('.bee_add_new_usuario').on('submit' , bee_add_new_usuario);
 
     function bee_add_new_usuario(event){
@@ -15,47 +14,27 @@ $(document).ready(function() {
             token = $('#token').val();
             
         if(email === '' || email.length < 2) {
-            Swal.fire(
-                'Ingrese todos los campos!',
-                'Ingrese un email válido',
-                'warning'
-            );
+            alertify.notify('Ingrese un email válido','warning', 4, null);
             return;
         }
 
         if(tipo_doc === '') {
-            Swal.fire(
-                'Ingrese todos los campos!',
-                'Ingrese un tipo de documento válido',
-                'warning'
-            );
+            alertify.notify('Ingrese un tipo de documento válido','warning', 4, null);
             return;
         }
 
         if(!validarEmail(email)){
-            Swal.fire(
-                'Ingrese todos los campos!',
-                'Ingrese un email válido',
-                'warning'
-            );
+            alertify.notify('Ingrese un email válido','warning', 4, null);
             return;
         }
 
         if(!validarCaracteres(nombre)){
-            Swal.fire(
-                'Ingrese todos los campos!',
-                'Ingrese un nombre válido',
-                'warning'
-            );
+            alertify.notify('Ingrese un nombre válido','warning', 4, null);
             return;
         }
 
         if(!validarNumero(number) || number.length == 0){
-            Swal.fire(
-                'Ingrese todos los campos!',
-                'Ingrese un número válido',
-                'warning'
-            );
+            alertify.notify('Ingrese un número válido','warning', 4, null);
             return;
         }
         
@@ -75,19 +54,16 @@ $(document).ready(function() {
             }
         }).done(function(res) {
             if(res.status === 200) {
-                // console.log(res.msg);
-                document.getElementById("email").value = "";
+                localStorage.setItem("token", res.data);
                 document.getElementById("name").value = "";
                 document.getElementById("tipo_doc").value = 0;
                 document.getElementById("number").value = "";
                 document.getElementById("token").value = "";
+
+                window.location.href = '/ciisapp/panel';
             }
         }).fail( function( err ) {
-            Swal.fire(
-                'Mensaje de Error!',
-                err.responseJSON.msg,
-                'error'
-            );
+            alertify.notify(err.responseJSON.msg,'error', 8, null);
         }).always(function() {
             
         })

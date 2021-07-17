@@ -287,28 +287,54 @@
         function register(){
             try{
                 $csrf = new Csrf();
+
                 $usuario           = new usuarioModel();
                 $usuario->token    = $_POST['token'];
 
-                $valid = $csrf->validate($_POST['token'], true);
-                if($valid) json_output(json_build(400, null, "Registro caducado!"));
+                $valid = $csrf->validate($_POST['token'], false);
+                if(!$valid) json_output(json_build(400, null, "Registro caducado!"));
 
                 $data  = $usuario->token();
                 if(!$data) json_output(json_build(400, null, "Token no encontrado!"));
-                
+
                 $usuario->id                = $data['id'];
                 $usuario->name              = $_POST['name'];
                 $usuario->type_document     = $_POST['tipo_doc'];
                 $usuario->number_document   = $_POST['number'];
 
-                if($usuario->update()){
-                    json_output(json_build(200, null, "Usuario " . $usuario->name . " registrado!"));
+                if($info = $usuario->update()){
+                  $data =  Auth::SignIn($info);
+                  json_output(json_build(200, $data, "Usuario " . $usuario->name . " registrado!"));
                 }
 
-                json_output(json_build(400, "Ocurrio un Error!"));
+                json_output(json_build(400, null, "Ocurrio un Error!"));
             }catch(Exception $e){
                 json_output(json_build(400, null, $e->getMessage()));
             }
+        }
+
+        function login(){
+          try{
+
+            $csrf = new Csrf();
+
+            $usuario           = new usuarioModel();
+            $usuario->email    = $_POST['email'];
+            $usuario->number_document   = $_POST['number'];
+            $usuario->token    = $_POST['token'];
+
+            $valid = $csrf->validate($_POST['token'], false);
+            if(!$valid) json_output(json_build(400, null, "Registro no válido!"));
+
+            if($info = $usuario->signIn()){
+              $data =  Auth::SignIn($info);
+              json_output(json_build(200, $data, "Usuario " . $usuario->name . " inicio sesión!"));
+            }
+            
+            json_output(json_build(400, null,"Credenciales Incorrectas!"));
+          }catch(Exception $e){
+            json_output(json_build(400, null, $e->getMessage()));
+          }
         }
 
         function get_ponentes_postmaster(){
