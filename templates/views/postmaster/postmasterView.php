@@ -1,31 +1,44 @@
 <?php require_once INCLUDES.'inc_header.php'; ?>
 
 <main>
-  <section class="register-today section hero-sec">
-      <img class="img-src" src="<?php echo IMAGES."postmaster/portada.png"?>" alt="#" style="">
+  <section class="register-today section hero-postmaster">
+      <div class="hero-content">
+        <h1>XVIII POSTMASTER</h1>
+        <p class="sub-header">Encuentro de egresados</p>
+      </div>
+      <!-- <img class="img-src" src="<?php echo IMAGES."postmaster/portada.png"?>" alt="#" style=""> -->
   </section>
   
-  <section class="about-centered">
+  <section class="about-sec">
       <div class=" container">
   
           <div class="card-row">
-              <div class="col-lg-12 col-md-12 col-12">
-                  <div class="text-justify">
-                      <h2 class="text-left title-sub"> ¿Qué es el POSTMASTER?</h2>
-                      <p>
-                          Diferentes egresados de la carrera de Ingeniería en Informática y Sistemas, expondrán sus
-                          experiencias desde que terminaron sus estudios en la UNJBG, nos contarán qué están haciendo
-                          ahora, cuáles son sus especialidades y cómo llegaron hasta ahí, rescatando su paso por nuestra
-                          universidad y brindando sus consejos, basados en su experiencia académica y profesional, para
-                          enfrentar el competitivo mundo laboral que se aproxima.
-                      </p>
-                      <div class="text-center mt-4">
-                          <!-- Enlace para Registrarse -->
-                          <a class="btn black primary" href="#">Finalizó las Inscripciones</a>
-                          <a class="btn black primary" href="#">Ponentes</a>
-                      </div>
+            <div class="text-justify">
+                <h2 class="section-title title-secondary"> ¿Qué es el POSTMASTER?</h2>
+                <p class="about-text">
+                    Diferentes egresados de la carrera de Ingeniería en Informática y Sistemas, expondrán sus
+                    experiencias desde que terminaron sus estudios en la UNJBG, rescatando su paso por nuestra
+                    universidad y brindando sus consejos, basados en su experiencia académica y profesional, para
+                    enfrentar el competitivo mundo laboral que se aproxima.
+                </p>
+                <div class="about-extra">
+                  <div>
+                    <p><strong>Fecha del evento:</strong></p>
+                    <p>20 de agosto del 2021</p>
                   </div>
-              </div>
+                  <div class="div">
+                    <p><strong>Transmisión por:</strong></p>
+                    <p>Facebook y Youtube</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                    <!-- Enlace para Registrarse -->
+                    <a class="btn black primary" href="#">Inscríbete</a>
+                </div>
+            </div>
+            <div class="image-wrapper">
+              <img src="<?php echo IMAGES."postmaster_1.jpg"?>" alt="postmaster">
+            </div>
           </div>
   
       </div>
@@ -36,7 +49,7 @@
           <div class="card-row">
               <div class="col-lg-6 col-md-12 col-12">
                   <div class="text-content text-justify">
-                      <h2 class="text-left text-white"> CONVERSATORIO Y DEBATE: Situación actual y trabajo virtual</h2>
+                      <h2 class="section-title-sec"> CONVERSATORIO Y DEBATE: Situación actual y trabajo virtual</h2>
                       <p> Terminaremos el ciclo de conferencias con un debate sobre cómo nuestros
                           egresados de la carrera de Ingeniería en Informática y Sistemas enfrentaron en sus trabajos la
                           actual situación del aislamiento social que vivimos debido a la pandemia del Covid-19 que afecta
@@ -65,42 +78,6 @@
                       </div>
                   </div>
               </div>
-          </div>
-      </div>
-  </section>
-  
-  
-  <section class="schedule-section">
-      <div class="container">
-          <h2 class="text-left section-title">CRONOGRAMA</h2>
-          <div class="schedule">
-            <div class="schedule__event">
-                <div class="schedule__event--time">
-                    <div class="schedule__event--time-start"> 11:00 am</div>
-                    <div class="schedule__event--time-dash"></div>
-                    <div class="schedule__event--time-end"> 12:00 am</div>
-                </div>
-                <div class="schedule__event--info">
-                    <div class="schedule__event--info-title"> INAGURACIÓN</div>
-                </div>
-            </div>
-            <?php foreach([1,1,1,1,1,1] as $data){ ?>
-            <div class="schedule__event">
-                    <div class="schedule__event--time">
-                        <div class="schedule__event--time-start"> 11:00 am</div>
-                        <div class="schedule__event--time-dash"></div>
-                        <div class="schedule__event--time-end"> 12:00 am</div>
-                    </div>
-                    <div class="schedule__event--info">
-                            <div class="schedule__event--info-title">MBA. Claudia Mitacc</div>
-                            <div class="schedule__event--info-sub">Cargo: Technical Leader - BCP</div>
-                    </div>
-                    <div class="schedule__event--extra">
-                            <a class="btn btn-outline" href="<?php echo UPLOADS.'PDF/Claudia Mitacc.pdf'?>"
-                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
-                    </div>
-            </div>
-            <?php } ?>
           </div>
       </div>
   </section>
@@ -138,6 +115,42 @@
           </div>
       </div>
   </section>
+  
+  <section class="schedule-section">
+      <div class="container">
+          <h2 class="text-left section-title">CRONOGRAMA</h2>
+          <div class="schedule">
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 11:00 am</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 12:00 am</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> INAGURACIÓN</div>
+                </div>
+            </div>
+            <?php foreach([1,1,1,1,1,1] as $data){ ?>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 11:00 am</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 12:00 am</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">MBA. Claudia Mitacc</div>
+                            <div class="schedule__event--info-sub">Cargo: Technical Leader - BCP</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="<?php echo UPLOADS.'PDF/Claudia Mitacc.pdf'?>"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>
+            <?php } ?>
+          </div>
+      </div>
+  </section>
+
 </main>
 
 <?php require_once INCLUDES.'inc_footer.php'; ?>

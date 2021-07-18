@@ -8,6 +8,10 @@
   height: 770px;
   padding-top: 8.4rem;
 
+  .hero-wrapper {
+    @include flex;
+  }
+
   .hero-content {
     max-width: 70rem;
     margin: 7rem 0;
@@ -98,4 +102,32 @@
   width: 100%;
   z-index: 2;
   background-color: rgba(5, 21, 80, 0.5);
+}
+
+.hero-postmaster {
+  background: linear-gradient(rgba(26, 27, 62, 1), rgba(5, 21, 80, 0.75)),
+    url(../images/postmaster_bg_1.jpg) center center;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  position: relative;
+  height: 400px;
+  padding-top: 6.4rem;
+  justify-content: center;
+
+  h1 {
+    color: $white;
+  }
+
+  & .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .sub-header {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
 }

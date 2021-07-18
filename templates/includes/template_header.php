@@ -16,6 +16,16 @@
 .timetable{display:grid;grid-template-areas:". week" "time content";grid-template-columns:120px;grid-template-rows:60px}.timetable .weekend{background:#fbfbfc;color:#87a1ad}.timetable__week-names{grid-area:week;display:grid;grid-template-columns:repeat(5,1fr);text-transform:uppercase;font-size:12px;font-weight:600;color:#555}.timetable__week-names>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.timetable__time-interval{grid-area:time;display:grid;grid-template-rows:repeat(6,1fr);font-size:13px;font-weight:600;color:#555}.timetable__time-interval>div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.timetable__content{grid-area:content;display:grid;grid-template-rows:repeat(6,1fr);grid-template-columns:repeat(5,1fr);border-right:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc}.timetable__content>div{-webkit-box-shadow:inset 1px 0 0 #dcdcdc,inset 0 1px 0 0 #dcdcdc;box-shadow:inset 1px 0 0 #dcdcdc,inset 0 1px 0 0 #dcdcdc}.timetable .row-2{grid-row-end:span 2}.timetable .row-3{grid-row-end:span 3}.timetable__session{padding:1.6rem;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.timetable__session-time{font-size:13px;font-weight:600;color:#555;margin-bottom:.5rem}.timetable__session-name{font-size:17px;font-weight:600;margin-bottom:.5rem}.timetable__session-presenter{font-size:13.5px}.timetable__session.attended{background-color:#ddf7e4}.timetable__session.skipped{background-color:#fee5e3}
   </style>
 	<link href="<?php echo CSS.'app.css' ?>" rel="stylesheet">
+  <style>
+    .card-section-header {
+      padding: 1.5rem 1.8rem;
+    }
+
+    .card-section-title {
+      font-size: 19px;
+      color: #222e3c;
+    }
+  </style>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -29,25 +39,25 @@
                         </svg></span></a>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">Postmaster</li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item <?php if($_SERVER['REQUEST_URI']=='/ciisapp/panel') echo 'active' ?>">
                         <a class="sidebar-link" href="<?php echo URL.'panel' ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Asistencia</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($_SERVER['REQUEST_URI']=='/ciisapp/talleres') echo 'active' ?>">
                         <a class="sidebar-link" href="<?php echo URL.'talleres' ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Talleres</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($_SERVER['REQUEST_URI']=='/ciisapp/ponencias') echo 'active' ?>">
                         <a class="sidebar-link" href="<?php echo URL.'ponencias' ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Ponencias</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($_SERVER['REQUEST_URI']=='/ciisapp/certificado') echo 'active' ?>">
                         <a class="sidebar-link" href="<?php echo URL.'certificado' ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Certificado</span>

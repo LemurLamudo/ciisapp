@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3rem;
 }
 
 .container {
@@ -41,6 +41,7 @@ h2 {
   margin-bottom: 5.5rem;
   text-align: center;
   position: relative;
+  font-size: 3.6rem;
 
   &.title-secondary {
     text-transform: none;
@@ -75,6 +76,12 @@ h2 {
   }
 }
 
+.section-title-sec {
+  margin-bottom: 2rem;
+  color: $white;
+  font-size: 3.6rem;
+}
+
 .card-row {
   display: flex;
   justify-content: space-between;
@@ -96,4 +103,8 @@ h4,
 h5,
 h6 {
   color: $secondary;
+}
+
+svg {
+  pointer-events: none;
 }

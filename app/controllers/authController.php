@@ -5,10 +5,12 @@
         }
 
         public function index(){
-            View::render('login');
+            $title = "Iniciar sesión";
+            View::render('login', compact('title'));
         }
 
         public function register(){
-            View::render('register');
+            $title = "Registrate";
+            View::render('register', compact('title'));
         }
     }

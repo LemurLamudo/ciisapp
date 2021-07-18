@@ -3,6 +3,18 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content text-white">
+                    <!-- <div class="home-event-date-wrapper">
+                        <div class="home-event-day-wrapper">
+                          <div class="home-event-day">20</div>
+                          <div class="divider home-event-days"></div>
+                          <div class="home-event-day">21</div>
+                        </div>
+                        <div class="divider home-event-date"></div>
+                        <div class="home-event-date">
+                        <div class="home-event-month">Agosto</div>
+                        <div class="home-event-year">2021</div>
+                      </div>
+                    </div> -->
                     <h1 class="text-white">XXII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS</h1>
                     <p class="sub-header">Del 8 al 12 de noviembre</p>
                     <p>El XXII CIIS iniciará en:</p>
@@ -36,6 +48,68 @@
                 </div> 
             </div>
         </section>
+
+        <!-- hero-postmaster
+          <section class="hero">
+              <div class="container">
+                  <div class="hero-content text-white">
+                      <div class="hero-wrapper">
+                        <div class="home-event-date-wrapper">
+                            <div class="home-event-day-wrapper">
+                              <div class="home-event-day">20</div>
+                            </div>
+                            <div class="divider home-event-date"></div>
+                            <div class="home-event-date">
+                            <div class="home-event-month">Ago</div>
+                            <div class="home-event-year">2021</div>
+                          </div>
+                        </div>
+                        <div class="hero-event">
+                          <p>El XXII CIIS presenta:</p>
+                          <h1 class="text-white" style="
+                              margin-bottom: 0;
+                              margin-top: 15px;
+                              font-size: 64px;
+                          ">XVIII</h1>
+                            <h1 class="text-white" style="
+                            margin-top: 0;
+                            font-size: 64px;
+                        ">POSTMASTER</h1>
+                          <p class="sub-header">Encuentro de egresados</p>
+                          <div class="countdown">
+                              <div class="timer">
+                                  <span class="day">112</span>
+                                  <div class="timer-text">Días</div>
+                              </div>
+                              <span>:</span>
+                              <div class="timer">
+                                  <span class="hour">22</span>
+                                  <div class="timer-text">Horas</div>
+                              </div>
+                              <span>:</span>
+                              <div class="timer">
+                                  <span class="minute">00</span>
+                                  <div class="timer-text">Minutos</div>
+                              </div>
+                              <span>:</span>
+                              <div class="timer">
+                                  <span class="second">20</span>
+                                  <div class="timer-text">Segundos</div>
+                              </div>
+                          </div>
+                          <form class="bee_add_preinscripcion">
+                              <div class="input-group">
+                                  <input type="email" name="email" class="form-input" id="email" placeholder="Ingresa tu email" required="">
+                                  <button type="submit" class="btn btn-hero input-group-btn">Pre-inscríbete</button>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                  </div> 
+              </div>
+          </section>
+        end hero-postmaster -->
+
         <div class="hero-info">
             <div class="hero-contacts">
                 <div class="hero-contact">
