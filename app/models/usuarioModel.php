@@ -12,6 +12,7 @@
         public $photo;
         public $token;
         public $password;
+        public $status;
 
         /**
          *

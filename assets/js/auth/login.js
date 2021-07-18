@@ -42,7 +42,7 @@ $(document).ready(function() {
                 document.getElementById("email").value = "";
                 document.getElementById("number").value = "";
 
-                window.location.href = '/ciisapp/panel';
+                window.location.href = '/ciisapp/panel?token=' + res.data;
             }
         }).fail( function( err ) {
             console.error(err);

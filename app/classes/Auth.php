@@ -1,6 +1,9 @@
 <?php
 use Firebase\JWT\JWT;
 
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
 class Auth
 {
     private static $secret_key = 'Ciis2021Sadw1s9x8da@zul';
@@ -36,6 +39,8 @@ class Auth
         if($decode->aud !== self::Aud())
         {
             throw new Exception("Invalid user logged in.");
+        }else {
+            return $decode;
         }
     }
 

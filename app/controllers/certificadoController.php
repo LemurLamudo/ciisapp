@@ -2,6 +2,7 @@
 
     class certificadoController extends Controller{
         public function __construct(){
+            validate_token();
         }
 
         public function index(){

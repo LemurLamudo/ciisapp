@@ -12,6 +12,30 @@
         return date('Y-m-d H:i:s');
     }
 
+    function validate_token(){
+        $token = $_GET["token"];
+        
+        try{
+            return Auth::Check(($token));
+        } catch(Exception $e){
+            Redirect(URL);
+        }
+    }
+
+    function validate_token_admin(){
+        $info = validate_token();
+
+        if(!$info->data->role == "ROLE_ADMIN"){
+            Redirect(URL);
+        }
+    }
+
+    function Redirect($url, $permanent = false)
+    {
+        header('Location: ' . $url, true, $permanent ? 200 : 301);
+        exit();
+    }
+
     function json_output($json , $die = true)
     {
         header('Access-Control-Allow-Origin: *');
@@ -103,4 +127,14 @@
         require_once $file_to_include;
         $output = ob_get_clean();
         return $output;
+    }
+
+    function gen_uuid() {
+        return sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+            mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ),
+            mt_rand( 0, 0xffff ),
+            mt_rand( 0, 0x0fff ) | 0x4000,
+            mt_rand( 0, 0x3fff ) | 0x8000,
+            mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff )
+        );
     }
