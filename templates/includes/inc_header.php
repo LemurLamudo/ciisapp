@@ -13,7 +13,7 @@
     <meta property="og:image" content="none">
     <meta property="og:url" content="https://ciistacna.com/">
     <meta property="og:site_name" content="XXII CIIS">
-    <link rel="manifest" href="<?php echo FAVICON.'site.webmanifest' ?>">
+    <link rel="manifest" href="<?php echo FONTS.'site.webmanifest' ?>">
     <link rel="icon" href="<?php echo FAVICON.'favicon-16x16.png' ?>" type="image/png" sizes="16x16">
     <link rel="icon" href="<?php echo FAVICON.'favicon-32x32.png' ?>" type="image/png" sizes="32x32">
     <link rel="icon" href="<?php echo FAVICON.'favicon-96x96.png' ?>" type="image/png" sizes="96x96">
@@ -50,10 +50,16 @@
                     </div>
                     <nav class="navbar">
                         <ul class="nav-list">
-                            <li class="nav-item"><a class="nav-link" href="<?php echo BASEPATH?>">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="postmaster">Postmaster</a></li>
-                            <li class="nav-item"><div class="nav-link">Ediciones Anteriores <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
+                          <li class="nav-item"><a class="nav-link" href="<?php echo BASEPATH?>">Inicio</a></li>
+                          <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
+                          <li class="nav-item"><div class="nav-link">Eventos <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
+                            <ul class="sub-menu">
+                              <li><a href="postmaster" class="sub">Postmaster</a></li>
+                              <li><a href="" class="sub">Talleres</a></li>
+                              <li><a href="" class="sub">Concursos</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item"><div class="nav-link">Ediciones Anteriores <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
                             <ul class="sub-menu">
                               <li><a href="" class="sub">XIX CIIS</a></li>
                               <li><a href="" class="sub">XX CIIS</a></li>

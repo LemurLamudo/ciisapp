@@ -1,15 +1,41 @@
-.about-centered {
-  text-align: center;
+.about-sec {
+  // text-align: center;
 
   h2,
-  p {
-    padding-bottom: 3rem;
+  .about-text {
+    padding-bottom: 2rem;
+  }
+
+  strong {
+    color: #363b3e;
+  }
+
+  .btn {
+    margin-top: 3.5rem;
+  }
+
+  .card-row {
+    align-items: center;
+
+    > div:first-child {
+      flex: 1.5;
+      padding-right: 9rem;
+    }
+    .image-wrapper {
+      box-shadow: 0 14px 54px 0 rgb(26 36 71 / 24%);
+      line-height: 0;
+    }
+  }
+
+  .about-extra {
+    display: flex;
+    margin-top: 1rem;
   }
 }
 
 .page-section {
   color: $white;
-  background-color: #1281e8;
+  background-color: #051b42;
 
   > * > .row {
     align-items: center;

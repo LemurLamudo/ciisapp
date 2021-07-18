@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="utf-8">
-	<title>Iniciar sesión | Congreso Internacional de Informática y Sistemas</title>
+	<title><?php echo $d->title ?> | Congreso Internacional de Informática y Sistemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="_aCDFqLI3QdYZr7Nox7_RfyqGLpRlmLMEAOfEZQk3mQ">
     <meta name="keywords" content="XXII CIIS, xxii ciis, CIIS XXII, ciis xxii, ciis, tacna ciis, congreso internacional, conference, university, universidad">

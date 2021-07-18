@@ -5,6 +5,7 @@
         }
 
         public function index(){
-            View::render('postmaster');
+            $title = "Postmaster";
+            View::render('postmaster', compact('title'));
         }
     }
