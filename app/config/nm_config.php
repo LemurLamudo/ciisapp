@@ -12,7 +12,7 @@
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'http://143.244.148.133/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'http://ciistacna.com/');
 
     // rutas de directorios y archivos =>
 
@@ -51,10 +51,10 @@
     // credenciales base de datos   =>  producción
     define('DB_ENGINE' ,   'mysql');
     define('DB_HOST'   ,   'localhost');
-    define('DB_NAME'   ,   '__REMOTE DB__');
-    define('DB_USER'   ,   '__REMOTE DB__');
-    define('DB_PASS'   ,   '__REMOTE DB__');
-    define('DB_CHARSET',   '__REMOTE CHARTSET__');
+    define('DB_NAME'   ,   'ciis2020');
+    define('DB_USER'   ,   'root');
+    define('DB_PASS'   ,   'lobitogeiner24');
+    define('DB_CHARSET',   'utf8');
 
     /**
      * Controlador Defecto
