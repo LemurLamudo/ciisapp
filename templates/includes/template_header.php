@@ -107,7 +107,7 @@
                                 <i class="align-middle" data-feather="settings"></i>
                             </a>
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                                <img src="<?php echo IMAGES.'avatar.PNG' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="username"></span>
+                                <img src="<?php echo IMAGES.'avatar.png' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="username"></span>
                             </a>
 							<div class="dropdown-menu dropdown-menu-end">
 								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="user"></i> Profile</a>

@@ -61,7 +61,7 @@ $(document).ready(function() {
                 document.getElementById("number").value = "";
                 document.getElementById("token").value = "";
 
-                window.location.href = '/ciisapp/panel?token=' + res.data;
+                window.location.href = uri + 'panel?token=' + res.data;
             }
         }).fail( function( err ) {
             console.log(err);
