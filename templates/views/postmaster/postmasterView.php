@@ -92,7 +92,7 @@
                       <div class="card mb-3">
                           <!-- Course Head -->
                           <div class="card-header">
-                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.JFIF' ?>" height="280" width="100%" alt="#">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.jfif' ?>" height="280" width="100%" alt="#">
                           </div>
                           <!-- Course Body -->
                           <div class="card-body">
@@ -112,7 +112,7 @@
                       <div class="card mb-3">
                           <!-- Course Head -->
                           <div class="card-header">
-                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.JPEG' ?>" height="280" width="100%" alt="#">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.jpeg' ?>" height="280" width="100%" alt="#">
                           </div>
                           <!-- Course Body -->
                           <div class="card-body">
@@ -132,7 +132,7 @@
                       <div class="card mb-3">
                           <!-- Course Head -->
                           <div class="card-header">
-                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.JFIF' ?>" height="280" width="100%" alt="#">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.jfif' ?>" height="280" width="100%" alt="#">
                           </div>
                           <!-- Course Body -->
                           <div class="card-body">
@@ -152,7 +152,7 @@
                       <div class="card mb-3">
                           <!-- Course Head -->
                           <div class="card-header">
-                              <img src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.JPG' ?>" height="280" width="100%" alt="#">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.jpg' ?>" height="280" width="100%" alt="#">
                           </div>
                           <!-- Course Body -->
                           <div class="card-body">

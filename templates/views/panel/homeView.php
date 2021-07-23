@@ -58,7 +58,7 @@
                                   <div class="card mb-3 shadow-none">
                                     <div class="row g-0">
                                       <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.JFIF' ?>" alt="Unsplash"></div>
+                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.jfif' ?>" alt="Unsplash"></div>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body text-left">
@@ -75,7 +75,7 @@
                                   <div class="card mb-3 shadow-none">
                                     <div class="row g-0">
                                       <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.JPEG' ?>" alt="Unsplash"></div>
+                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.jpeg' ?>" alt="Unsplash"></div>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body text-left">
@@ -92,7 +92,7 @@
                                   <div class="card mb-3 shadow-none">
                                     <div class="row g-0">
                                       <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.JFIF' ?>" alt="Unsplash"></div>
+                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.jfif' ?>" alt="Unsplash"></div>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body text-left">
@@ -109,7 +109,7 @@
                                   <div class="card mb-3 shadow-none">
                                     <div class="row g-0">
                                       <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.JPG' ?>" alt="Unsplash"></div>
+                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.jpg' ?>" alt="Unsplash"></div>
                                       </div>
                                       <div class="col-md-8">
                                         <div class="card-body text-left">
