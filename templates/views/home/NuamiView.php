@@ -160,7 +160,9 @@
         <video id="player" playsinline controls>
             <source src="<?php echo UPLOADS.'video_ciis.mp4' ?>" type="video/mp4"/>
         </video>
-        <svg xmlns="http://www.w3.org/2000/svg" class="close" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+        <span class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+        </span>
 </div>
 <script src="<?php echo JS.'countdown.js' ?>"></script>
 <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
