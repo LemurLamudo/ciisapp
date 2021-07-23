@@ -6,13 +6,13 @@
 
     define('LANG','es');                                                            /* Language */
 
-    define('BASEPATH', IS_LOCAL ? '/ciisapp/' : '__EL BASEPATH EN PRODUCCIÓN__');
+    define('BASEPATH', IS_LOCAL ? '/ciisapp/' : 'https://ciistacna.com/');
 
     define('AUTH_SALT', 'ciisapp<3');                                        /* Sal del Sistema */
 
     define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'http://ciistacna.com/');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciisapp/' : 'https://ciistacna.com/');
 
     // rutas de directorios y archivos =>
 
@@ -59,6 +59,6 @@
     /**
      * Controlador Defecto
     */
-    define('DEFAULT_CONTROLLER'         , 'home');
+    define('DEFAULT_CONTROLLER'         , 'postmaster');
     define('DEFAULT_ERROR_CONTROLLER'   , 'error');
     define('DEFAULT_METHOD'             , 'index');

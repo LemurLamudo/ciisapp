@@ -23,9 +23,10 @@ $(document).ready(function() {
 
         data.append('hook', hook);
         data.append('action', action);
+        var uri = document.getElementById("uri").value;
 
         $.ajax({
-            url: '/ciisapp/ajax/login',
+            url: uri + 'ajax/login',
             type: 'post',
             dataType: 'json',
             contentType: false,

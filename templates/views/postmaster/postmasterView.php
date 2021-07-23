@@ -33,7 +33,7 @@
                 </div>
                 <div class="mt-4">
                     <!-- Enlace para Registrarse -->
-                    <a class="btn black primary" href="#">Inscríbete</a>
+                    <a class="btn black primary" href="<?php echo URL . 'home'?>">Inscríbete</a>
                 </div>
             </div>
             <div class="image-wrapper">
@@ -89,11 +89,10 @@
               <div class="col-12 pl-5 pr-5">
                   <div class="card-list">
                       <!-- Single Course -->
-                      <?php foreach([1,1,1,1] as $data){ ?>
                       <div class="card mb-3">
                           <!-- Course Head -->
                           <div class="card-header">
-                              <img src="<?php echo IMAGES.'postmaster/ponentes/AngelSMRospigliosi.png' ?>" alt="#">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.JFIF' ?>" height="280" width="100%" alt="#">
                           </div>
                           <!-- Course Body -->
                           <div class="card-body">
@@ -103,13 +102,73 @@
                                   </div>
                               </div>
                               <div class="">
-                                  <h3 class="c-title mb-1">Ing. Angel Santa María Rospigliosi</h3>
-                                  <p class="c-description">Control Gubernamental - Poder Judicial</p>
+                                  <h3 class="c-title mb-1">José Alfredo Tuyo Llipita</h3>
+                                  <p class="c-description"></p>
+                              </div>
+                              <div class="card-footer"><a href="" class="btn-link">Ver más <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><polyline points="268 112 412 256 268 400" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg></a></div>
+                          </div>
+                      </div>
+
+                      <div class="card mb-3">
+                          <!-- Course Head -->
+                          <div class="card-header">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.JPEG' ?>" height="280" width="100%" alt="#">
+                          </div>
+                          <!-- Course Body -->
+                          <div class="card-body">
+                              <div class="name-price text-right">
+                                  <div class="teacher-info ">
+                                      <img src="<?php echo IMAGES.'paises/peru.jpg' ?>" alt="country-flag" class="card-icon">
+                                  </div>
+                              </div>
+                              <div class="">
+                                  <h3 class="c-title mb-1">Julissa Milagros Gutiérrez Vargas</h3>
+                                  <p class="c-description">Implementación NIST Cybersecurity Framework</p>
                               </div>
                               <div class="card-footer"><a href="<?php echo URL.'postmaster/ponentes' ?> /#AngelSMRospigliosi" class="btn-link">Ver más <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><polyline points="268 112 412 256 268 400" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg></a></div>
                           </div>
                       </div>
-                      <?php } ?>
+
+                      <div class="card mb-3">
+                          <!-- Course Head -->
+                          <div class="card-header">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.JFIF' ?>" height="280" width="100%" alt="#">
+                          </div>
+                          <!-- Course Body -->
+                          <div class="card-body">
+                              <div class="name-price text-right">
+                                  <div class="teacher-info ">
+                                      <img src="<?php echo IMAGES.'paises/peru.jpg' ?>" alt="country-flag" class="card-icon">
+                                  </div>
+                              </div>
+                              <div class="">
+                                  <h3 class="c-title mb-1">Henry George Maquera Quispe</h3>
+                                  <p class="c-description"></p>
+                              </div>
+                              <div class="card-footer"><a href="<?php echo URL.'postmaster/ponentes' ?> /#AngelSMRospigliosi" class="btn-link">Ver más <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><polyline points="268 112 412 256 268 400" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg></a></div>
+                          </div>
+                      </div>
+
+                      <div class="card mb-3">
+                          <!-- Course Head -->
+                          <div class="card-header">
+                              <img src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.JPG' ?>" height="280" width="100%" alt="#">
+                          </div>
+                          <!-- Course Body -->
+                          <div class="card-body">
+                              <div class="name-price text-right">
+                                  <div class="teacher-info ">
+                                      <img src="<?php echo IMAGES.'paises/peru.jpg' ?>" alt="country-flag" class="card-icon">
+                                  </div>
+                              </div>
+                              <div class="">
+                                  <h3 class="c-title mb-1">Andrea Montes Albarracín</h3>
+                                  <p class="c-description"></p>
+                              </div>
+                              <div class="card-footer"><a href="<?php echo URL.'postmaster/ponentes' ?> /#AngelSMRospigliosi" class="btn-link">Ver más <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><polyline points="268 112 412 256 268 400" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:#3f4ce7;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg></a></div>
+                          </div>
+                      </div>
+
                   </div>
               </div>
           </div>
@@ -122,31 +181,185 @@
           <div class="schedule">
             <div class="schedule__event">
                 <div class="schedule__event--time">
-                    <div class="schedule__event--time-start"> 11:00 am</div>
+                    <div class="schedule__event--time-start"> 09:00 am</div>
                     <div class="schedule__event--time-dash"></div>
-                    <div class="schedule__event--time-end"> 12:00 am</div>
+                    <div class="schedule__event--time-end"> 09:15 am</div>
                 </div>
                 <div class="schedule__event--info">
-                    <div class="schedule__event--info-title"> INAGURACIÓN</div>
+                    <div class="schedule__event--info-title"> Registro de asistencia</div>
                 </div>
             </div>
-            <?php foreach([1,1,1,1,1,1] as $data){ ?>
+            <div class="schedule">
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 09:15 am</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 09:30 am</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> Ceremonia de Inauguración</div>
+                </div>
+            </div>
             <div class="schedule__event">
                     <div class="schedule__event--time">
-                        <div class="schedule__event--time-start"> 11:00 am</div>
+                        <div class="schedule__event--time-start"> 09:30 am</div>
                         <div class="schedule__event--time-dash"></div>
-                        <div class="schedule__event--time-end"> 12:00 am</div>
+                        <div class="schedule__event--time-end"> 10:10 am</div>
                     </div>
                     <div class="schedule__event--info">
-                            <div class="schedule__event--info-title">MBA. Claudia Mitacc</div>
-                            <div class="schedule__event--info-sub">Cargo: Technical Leader - BCP</div>
+                            <div class="schedule__event--info-title">José Alfredo Tuyo Llipita</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
                     </div>
                     <div class="schedule__event--extra">
-                            <a class="btn btn-outline" href="<?php echo UPLOADS.'PDF/Claudia Mitacc.pdf'?>"
+                            <a class="btn btn-outline" href="#"
                                 target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
                     </div>
             </div>
-            <?php } ?>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 10:10 am</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 10:50 am</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Julissa Milagros Gutiérrez Vargas</div>
+                            <div class="schedule__event--info-sub">Implementación NIST Cybersecurity Framework</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 10:50 am</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 11:30 am</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Henry George Maquera Quispe</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>1
+            </div>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 11:30 am</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 12:10 am</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Christian Nikolai Cáceres Sosa</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>            
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 12:10 am</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 14:00 pm</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> RECESO</div>
+                </div>
+            </div>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 14:00 pm</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 14:30 pm</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Ponente por definir</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>  
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 14:40 pm</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 15:10 pm</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Ponente por definir</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div> 
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 15:20 pm</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 15:50 pm</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Herson Urbina Cayo</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>
+            <div class="schedule__event">
+                    <div class="schedule__event--time">
+                        <div class="schedule__event--time-start"> 16:00 pm</div>
+                        <div class="schedule__event--time-dash"></div>
+                        <div class="schedule__event--time-end"> 16:30 pm</div>
+                    </div>
+                    <div class="schedule__event--info">
+                            <div class="schedule__event--info-title">Andrea Montes Albarracín</div>
+                            <div class="schedule__event--info-sub">Por definir</div>
+                    </div>
+                    <div class="schedule__event--extra">
+                            <a class="btn btn-outline" href="#"
+                                target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
+                    </div>
+            </div>             
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 16:40 pm</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 16:50 pm</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> Remembranza del Postmaster</div>
+                </div>
+            </div>
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 16:50 pm</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 17:00 pm</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> Palabras de clausura</div>
+                </div>
+            </div>
+            <div class="schedule__event">
+                <div class="schedule__event--time">
+                    <div class="schedule__event--time-start"> 17:00 pm</div>
+                    <div class="schedule__event--time-dash"></div>
+                    <div class="schedule__event--time-end"> 17:10 pm</div>
+                </div>
+                <div class="schedule__event--info">
+                    <div class="schedule__event--info-title"> Agradecimientos</div>
+                </div>
+            </div>
           </div>
       </div>
   </section>

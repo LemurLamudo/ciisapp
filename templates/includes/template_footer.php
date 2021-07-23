@@ -34,6 +34,5 @@
 <script src="<?php echo PLUGINS.'alertify/alertify.min.js' ?>"></script>
 <script src="<?php echo JS.'app.js' ?>"></script>
 <script src="<?php echo JS.'template/index.js' ?>"></script>
-
 </body>
 </html>

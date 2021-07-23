@@ -24,6 +24,7 @@
               <div class="col-md-10 col-11">
                 <h2 class="text-center fw-bold">Registro</h2>
                 <div class="mt-5">
+                  <input type="hidden" id="uri" value="<?php echo URL ?>">
                     <form class="bee_add_new_usuario">
                         <div>
                             <div class="font-bold form-label">Email</div>

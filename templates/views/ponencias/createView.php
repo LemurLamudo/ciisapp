@@ -101,62 +101,59 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-10">
-                                <h5 class="card-title mb-0">CREAR PONENTE</h5>
-                            </div>
-                            <div class="col-2 d-flex flex-row-reverse">
-                                <a href="<?php echo URL.'ponencias/create?token=' ?>" class="btn btn-primary" id="c_ponencia">Guardar</a>
-                            </div>
+                            <h5 class="card-title mb-0">CREAR PONENTE</h5>
                         </div>
                     </div>
                     <div class="card-body">
+                        <form class="bee_add_ponencia">
+                            <div class="row">
+                                <div class="col-10"> </div>
+                                <div class="col-2 d-flex flex-row-reverse"> 
+                                    <button type="submit" class="btn btn-primary" id="c_ponencia">Guardar</button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Nombre Completo *</div>
+                                        <input type="text" class="form-control mt-2" id="name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Tipo Documento *</div>
+                                        <select class="form-control" name="type_document" id="tipo_doc">
+                                            <option value="0">DNI</option>
+                                            <option value="1">PASAPORTE</option>
+                                            <option value="2">CARNET DE EXTRANJERIA</option>
+                                            <option value="3">OTROS</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Teléfono *</div>
+                                        <input type="number" class="form-control mt-2" id="phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Pais *</div>
+                                        <select class="form-control" name="pais_id" id="documento">
 
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Nombre Completo *</div>
-                                    <input type="text" class="form-control mt-2" id="name" name="name">
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Tipo Documento *</div>
-                                    <select class="form-control" name="tipo_doc" id="tipo_doc">
-                                        <option value="0">DNI</option>
-                                        <option value="1">PASAPORTE</option>
-                                        <option value="2">CARNET DE EXTRANJERIA</option>
-                                        <option value="3">OTROS</option>
-                                    </select>
+
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Email *</div>
+                                        <input type="email" class="form-control mt-2" id="email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Número de Documento *</div>
+                                        <input type="number" class="form-control mt-2" id="number" name="number_document">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-bold form-label mt-4">Contacto *</div>
+                                        <input type="text" class="form-control mt-2" id="link" name="link">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Teléfono *</div>
-                                    <input type="number" class="form-control mt-2" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Pais *</div>
-                                    <select class="form-control" name="tipo_doc" id="tipo_doc">
-                                        <option value="0">Perú</option>
-                                        <option value="1">Argentina</option>
-                                        <option value="2">Brazil</option>
-                                        <option value="3">OTROS</option>
-                                    </select>
-                                </div>
+                                <input type="hidden" name="photo" id="photo" value="">
                             </div>
-
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Email *</div>
-                                    <input type="email" class="form-control mt-2" id="email" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Número de Documento *</div>
-                                    <input type="number" class="form-control mt-2" id="number" name="number">
-                                </div>
-                                <div class="form-group">
-                                    <div class="font-bold form-label mt-4">Contacto *</div>
-                                    <input type="text" class="form-control mt-2" id="link" name="link">
-                                </div>
-                            </div>
-                        </div>
-
+                        </form>
                         <br>
                         <form method="post" enctype="multipart/form-data">
                             <div class="fallback">
@@ -164,6 +161,7 @@
                             </div>
                             <div id="actions" class="row">
                                 <div class="col-lg-7">
+                                    <br>
                                     <!-- The fileinput-button span is used to style the file input field as button -->
                                     <span class="btn btn-success fileinput-button">
                                         <i class="glyphicon glyphicon-plus"></i>
@@ -234,90 +232,3 @@
 
 <?php require_once INCLUDES.'template_footer.php'; ?>
 <script src="<?php echo JS.'ponencia/create.js' ?>"></script>
-
-<script>
-
-    var previewNode = document.querySelector("#template");
-    previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);
-    
-    var myDropzone = new Dropzone(document.body, {
-        url: "upload.php",
-        paramName: "file",
-        acceptedFiles: 'image/*',
-        maxFilesize: 2,
-        maxFiles: 1,
-        thumbnailWidth: 160,
-        thumbnailHeight: 160,
-        thumbnailMethod: 'contain',
-        parallelUploads: 20,
-        previewTemplate: previewTemplate,
-        autoQueue: true,
-        previewsContainer: "#previews",
-        clickable: ".fileinput-button"
-    });
-    
-    myDropzone.on("addedfile", function(file) {
-        if(myDropzone.files.length == 1){
-            var uri = document.getElementById("uri").value;
-            var token = localStorage.getItem("token");
-
-            $('.dropzone-here').hide();
-            file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file); };
-            
-            var formData = new FormData();
-            formData.append('file', file);
-
-            $.ajax({
-                url: uri + '/ponencias/upload?token=' + token,
-                type: 'post',
-                dataType: 'json',
-                contentType: false,
-                processData: false,
-                cache: false,
-                data: formData,
-                beforeSend: function() {
-
-                }
-            }).done(function(res) {
-                alertify.notify('Archivo Guardado','success', 4, null);
-            }).fail( function( err ) {
-                alertify.notify('No se pudo cargar','error', 4, null);
-            }).always(function() {
-                
-            });
-        } else {
-            alertify.notify('Solo 1 imagen','error', 4, null);
-        }
-    });
-    
-    myDropzone.on("totaluploadprogress", function(progress) {
-        document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
-    });
-    
-    myDropzone.on("sending", function(file) {
-        document.querySelector("#total-progress").style.opacity = "1";
-        file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
-    });
-    
-    myDropzone.on("queuecomplete", function(progress) {
-
-    });
-    
-    document.querySelector("#actions .start").onclick = function() {
-        myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-    };
-    
-    $('#previews').sortable({
-        items:'.file-row',
-        cursor: 'move',
-        opacity: 0.5,
-        containment: "parent",
-        distance: 20,
-        tolerance: 'pointer',
-        update: function(e, ui){
-    
-        }
-    });
-</script>

@@ -17,7 +17,7 @@
                     </div> -->
                     <h1 class="text-white">XXII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS</h1>
                     <p class="sub-header">Del 8 al 12 de noviembre</p>
-                    <p>El XXII CIIS iniciará en:</p>
+                    <p>El Postmaster iniciará en:</p>
                     <div class="countdown">
                         <div class="timer">
                             <span class="day">51</span>
@@ -169,3 +169,4 @@
 </script>
 <?php require_once INCLUDES.'inc_scripts.php'; ?>
 <script src="<?php echo JS.'preinscripcion.js' ?>"></script>
+<script src="<?php echo PLUGINS.'alertify/alertify.min.js' ?>"></script>
