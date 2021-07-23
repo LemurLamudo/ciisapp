@@ -6,13 +6,12 @@ $(document).ready(function() {
     if(token == null) window.location.href = uri;
     var json = parseJwt(token);
 
-
     document.getElementById("icon").href= uri + 'panel?token=' + token;
 
     document.getElementById("panel").href= uri + 'panel?token=' + token;
-    document.getElementById("talleres").href= uri + 'talleres?token=' + token;
-    document.getElementById("ponencias").href= uri + 'ponencias?token=' + token;
-    document.getElementById("certificado").href= uri + 'certificado?token=' + token;
+    // document.getElementById("talleres").href= uri + 'talleres?token=' + token;
+    // document.getElementById("ponencias").href= uri + 'ponencias?token=' + token;
+    // document.getElementById("certificado").href= uri + 'certificado?token=' + token;
     
     $("#username").text(json.data.name);
     

@@ -1,6 +1,6 @@
 <?php
 
-    class PostmasterController extends Controller{
+    class postmasterController extends Controller{
         public function __construct(){
         }
 

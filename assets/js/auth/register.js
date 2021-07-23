@@ -40,9 +40,10 @@ $(document).ready(function() {
         
         data.append('hook', hook);
         data.append('action', action);
+        var uri = document.getElementById("uri").value;
 
         $.ajax({
-            url: '/ciisapp/ajax/register',
+            url: uri + 'ajax/register',
             type: 'post',
             dataType: 'json',
             contentType: false,
@@ -60,10 +61,10 @@ $(document).ready(function() {
                 document.getElementById("number").value = "";
                 document.getElementById("token").value = "";
 
-                window.location.href = '/ciisapp/panel';
+                window.location.href = uri + 'panel?token=' + res.data;
             }
         }).fail( function( err ) {
-            alertify.notify(err.responseJSON.msg,'error', 8, null);
+            console.log(err);
         }).always(function() {
             
         })

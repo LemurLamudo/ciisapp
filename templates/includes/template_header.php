@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/alertify.min.css' ?>" />  
   	<link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/themes/default.min.css' ?>" /> 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<script src="<?php echo JS.'global.js' ?>"></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
                         <span class="align-middle">Asistencia</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <!-- <li class="sidebar-item">
                         <a class="sidebar-link" href="<?php echo URL.'talleres?token=' ?>" id="talleres">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Talleres</span>
@@ -57,7 +59,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                         <span class="align-middle">Certificado</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -73,29 +75,29 @@
 							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="align-middle" data-feather="bell"></i>
-									<span class="indicator">4</span>
+									<span class="indicator">1</span>
 								</div>
 							</a>
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
-									4 New Notifications
+									1 Notificación
 								</div>
 								<div class="list-group">
 									<a href="#" class="list-group-item">
 										<div class="row g-0 align-items-center">
 											<div class="col-2">
-												<i class="text-danger" data-feather="alert-circle"></i>
+												<i class="text-success" data-feather="alert-circle"></i>
 											</div>
 											<div class="col-10">
-												<div class="text-dark">Update completed</div>
-												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
-												<div class="text-muted small mt-1">30m ago</div>
+												<div class="text-dark">Postmaster</div>
+												<div class="text-muted small mt-1">20 de Agosto del 2021</div>
+												<div class="text-muted small mt-1">100% Virtual</div>
 											</div>
 										</div>
 									</a>
 								</div>
 								<div class="dropdown-menu-footer">
-									<a href="#" class="text-muted">Show all notifications</a>
+									<a href="#" class="text-muted">Ver todas las notificaciones</a>
 								</div>
 							</div>
 						</li>
@@ -105,15 +107,15 @@
                                 <i class="align-middle" data-feather="settings"></i>
                             </a>
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                                <img src="<?php echo IMAGES.'avatars/avatar.jpg' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="username"></span>
+                                <img src="<?php echo IMAGES.'avatar.png' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="username"></span>
                             </a>
 							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="user"></i> Profile</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" id="logout">Log out</a>
+								<a class="dropdown-item" id="logout">Cerrar Sesión</a>
 							</div>
 						</li>
 					</ul>

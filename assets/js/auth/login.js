@@ -23,9 +23,10 @@ $(document).ready(function() {
 
         data.append('hook', hook);
         data.append('action', action);
+        var uri = document.getElementById("uri").value;
 
         $.ajax({
-            url: '/ciisapp/ajax/login',
+            url: uri + 'ajax/login',
             type: 'post',
             dataType: 'json',
             contentType: false,
@@ -42,7 +43,7 @@ $(document).ready(function() {
                 document.getElementById("email").value = "";
                 document.getElementById("number").value = "";
 
-                window.location.href = '/ciisapp/panel?token=' + res.data;
+                window.location.href = uri + 'panel?token=' + res.data;
             }
         }).fail( function( err ) {
             console.error(err);

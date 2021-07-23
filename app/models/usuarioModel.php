@@ -35,6 +35,32 @@
         }
 
         /**
+         *
+         * Model Usuario
+         * @return @id
+         */
+        public function add_complete(){
+            $sql = 'INSERT INTO users(email, role, name, type_document, number_document, phone, photo) 
+                    VALUES(:email, :role, :name , :type_document , :number_document , :phone, :photo)';
+
+            $user = [
+                'email'           =>  $this->email,
+                'role'            =>  $this->role,
+                'name'            =>  $this->name,
+                'type_document'   =>  $this->type_document,
+                'number_document' =>  $this->number_document,
+                'phone'           =>  $this->phone,
+                'photo'           =>  $this->photo
+            ];
+
+            try{
+                return ($this->id = parent::query($sql, $user)) ? $this->id : false;
+            }catch(Exception $e){
+                throw $e;
+            }
+        }
+
+        /**
          * Busca un Usuario
          * @return Usuario
          */
@@ -78,7 +104,7 @@
             ];
     
             try{
-                return ($rows = parent::query($sql, $data)) ? $rows[0] : false;
+                return ($rows = parent::query($sql, $data)) ? $rows : false;
             } catch (Exception $e) {
                 throw $e;
             }

@@ -55,35 +55,11 @@ $(document).ready(function() {
 
             }
         }).done(function(res) {
-
-            if(res.status == 201){
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: res.msg,
-                    showConfirmButton: false,
-                    timer: 2500
-                })
-            }else if(res.status == 200){
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'warning',
-                    title: res.msg,
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            }
+            alertify.notify(res.msg,'warning', 4, null);
             document.getElementById("email").value = "";
 
         }).fail(function(err) {
-            console.log(err);
-            Swal.fire({
-                position: 'top-end',
-                icon: 'warning',
-                title: err,
-                showConfirmButton: false,
-                timer: 1500
-            })
+            alertify.notify(err,'error', 4, null);
   
         }).always(function() {
 

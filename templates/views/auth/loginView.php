@@ -22,6 +22,7 @@
               <div class="col-md-10 col-11">
                 <h2 class="text-center fw-bold">Iniciar sesión</h2>
                 <div class="mt-5">
+                  <input type="hidden" id="uri" value="<?php echo URL ?>">
                     <form class="bee_add_sigIn">
                         <div>
                             <div class="font-bold form-label">Email</div>
