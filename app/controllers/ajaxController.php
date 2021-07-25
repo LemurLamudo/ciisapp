@@ -63,6 +63,7 @@
                 $mail->AddAddress($usuario->email);
                 $mail->isHTML(true);
                 $mail->Subject = 'Confirmacion de preinscripcion al XVIII Postmaster';
+                $mail->AddEmbeddedImage(IMAGES.'logo.png', 'logo_ciis');
                 $mail->Body    = $message;
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

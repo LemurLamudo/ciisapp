@@ -12,6 +12,10 @@
   display: block;
   width: 100%;
   font-weight: 500;
+
+  &.isInvalid {
+    border: 2px solid #f9564e;
+  }
 }
 
 .form-label {
@@ -73,4 +77,11 @@
     text-align: right;
     font-weight: 500;
   }
+}
+
+.error-label {
+  margin-top: 0.6rem;
+  color: #ff435d;
+  font-weight: 600;
+  font-size: 1.5rem;
 }

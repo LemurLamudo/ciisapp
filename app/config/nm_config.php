@@ -45,7 +45,7 @@
     define('LDB_HOST'   ,   'localhost');
     define('LDB_NAME'   ,   'ciis2020');
     define('LDB_USER'   ,   'root');
-    define('LDB_PASS'   ,   '');
+    define('LDB_PASS'   ,   'FrancoSQL12+');
     define('LDB_CHARSET',   'utf8');
 
     // credenciales base de datos   =>  producción

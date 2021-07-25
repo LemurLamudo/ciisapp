@@ -27,9 +27,7 @@
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-SemiBold.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1625104620519' ?>">   
-	  <link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/alertify.min.css' ?>" />  
-  	<link rel="stylesheet" href="<?php echo PLUGINS.'alertify/css/themes/default.min.css' ?>" />  
+    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1627182354787' ?>">   
 </head>
 <header>
         <div class="container">

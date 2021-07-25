@@ -3,18 +3,6 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content text-white">
-                    <!-- <div class="home-event-date-wrapper">
-                        <div class="home-event-day-wrapper">
-                          <div class="home-event-day">20</div>
-                          <div class="divider home-event-days"></div>
-                          <div class="home-event-day">21</div>
-                        </div>
-                        <div class="divider home-event-date"></div>
-                        <div class="home-event-date">
-                        <div class="home-event-month">Agosto</div>
-                        <div class="home-event-year">2021</div>
-                      </div>
-                    </div> -->
                     <h1 class="text-white">XXII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS</h1>
                     <p class="sub-header">Del 8 al 12 de noviembre</p>
                     <p>El Postmaster iniciará en:</p>
@@ -167,8 +155,6 @@
 <script src="<?php echo JS.'countdown.js' ?>"></script>
 <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
 <script>
-  const player=new Plyr("#player"),trailer=document.querySelector(".modal-video");document.querySelector(".video-selector").addEventListener("click",()=>trailer.classList.add("active")),document.querySelector(".modal-video .close").addEventListener("click",()=>{trailer.classList.remove("active"),player.stop()});
+  const player= (typeof Plyr === 'function') ? new Plyr("#player") : null,trailer=document.querySelector(".modal-video");document.querySelector(".video-selector").addEventListener("click",()=>trailer.classList.add("active")),document.querySelector(".modal-video .close").addEventListener("click",()=>{trailer.classList.remove("active"),player.stop()});
 </script>
 <?php require_once INCLUDES.'inc_scripts.php'; ?>
-<script src="<?php echo JS.'preinscripcion.js' ?>"></script>
-<script src="<?php echo PLUGINS.'alertify/alertify.min.js' ?>"></script>

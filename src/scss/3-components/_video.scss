@@ -83,6 +83,15 @@
   }
 }
 
+.plyr {
+  max-width: 1000px;
+  height: auto;
+
+  @include laptop {
+    width: 90%;
+  }
+}
+
 .vjs-theme-fantasy .vjs-play-control:hover .vjs-icon-placeholder:before {
   border: 0;
 }

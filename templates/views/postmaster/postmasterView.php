@@ -368,4 +368,3 @@
 
 <?php require_once INCLUDES.'inc_footer.php'; ?>
 <?php require_once INCLUDES.'inc_scripts.php'; ?>
-<script src="<?php echo JS.'postmaster.js' ?>"></script>
