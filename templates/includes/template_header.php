@@ -24,6 +24,7 @@
 </head>
 
 <body>
+	<input type="hidden" id="images" value="<?php echo IMAGES ?>">
 	<input type="hidden" id="uri" value="<?php echo URL ?>">
 	<div class="wrapper">
 
