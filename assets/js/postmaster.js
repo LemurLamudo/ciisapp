@@ -1,27 +1,16 @@
 
-$(document).ready(function() {
+$(document).ready( function() {
     bee_get_postmaster();
 
-    function bee_get_postmaster(event){
-        hook = 'bee_hook',
-        action = 'get';
-        $.ajax({
-            url: 'ajax/get_ponentes_postmaster',
-            type: 'post',
-            dataType: 'json',
-            cache: false,
-            data: {
-                hook, action
-            },
-            beforeSend: function() {
+    async function bee_get_postmaster(event){
 
-            }
-        }).done(function(res) {
-            if(res.status === 201) {
-                $ponencias = $('#ponencias');
+        $data = await get_type('ajax/get_ponentes_postmaster');
+
+        if($data != null){
+            $ponencias = $('#ponencias');
                 var uri = document.getElementById("images").value;
                 let htmlOptions = '';
-                res.data.forEach(ponente => {
+                $data.data.forEach(ponente => {
                     htmlOptions += `<div class="card mb-3">
                           <div class="card-header">
                               <img src="${uri}postmaster/ponentes/${ponente.photo}" height="280" width="100%" alt="#">
@@ -41,13 +30,6 @@ $(document).ready(function() {
                       </div>`;
                 });
                 $ponencias.html(htmlOptions);
-            }else{
-                console.log(res.data, '¡Upss!');
-            }
-        }).fail(function(err) {
-            console.log('Hubo un error en la petición' , '¡Upss!');
-        }).always(function() {
-
-        })
+        }
     }
 });

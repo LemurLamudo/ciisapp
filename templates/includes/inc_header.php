@@ -28,9 +28,11 @@
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1627182354787' ?>">   
+	  <script src="<?php echo JS.'global.js' ?>"></script>
 </head>
 <header>
 	<input type="hidden" id="images" value="<?php echo IMAGES ?>">
+	<input type="hidden" id="uri" value="<?php echo URL ?>">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-left">
