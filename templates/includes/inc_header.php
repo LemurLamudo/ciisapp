@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1627182354787' ?>">   
 </head>
 <header>
+	<input type="hidden" id="images" value="<?php echo IMAGES ?>">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-left">
