@@ -36,8 +36,6 @@ async function add_type(url, formData){
     formData.append('action', action);
     var token = localStorage.getItem("token");
 
-    console.log(uri + url + '?token=' + token);
-
     await $.ajax({
         url: `${uri}${url}?token=`  + token,
         type: 'post',

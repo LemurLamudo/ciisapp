@@ -9,6 +9,7 @@
         public $photo;
         public $description;
         public $social;
+        public $asistencia;
 
         /**
          *
@@ -16,7 +17,7 @@
          * @return @List<Postmaster>
          */
         public function all(){
-            $sql = 'SELECT c.id, c.photo, c.name, p.anio, ps.name as name_pais , pc.nombre as name_tema
+            $sql = 'SELECT c.id, c.photo, c.name, p.anio, ps.name as name_pais , pc.nombre as name_tema, pc.status as status_ponencia, pc.id as ponencia_id, pc.asistencia, pc.hora_ini, pc.hora_fin
                 FROM users as c 
                 INNER JOIN ponente as p ON c.id = p.user_id 
                 INNER JOIN paises as ps ON ps.id = p.pais_id 
@@ -25,6 +26,20 @@
 
             try{
                 return ($rows = parent::query($sql)) ? $rows : false;
+            } catch(Exception $e) {
+                throw $e;
+            }
+        }
+
+        /**
+         * Busca un Usuario
+         * @return ponencia
+         */
+        public function one(){
+            $sql = 'SELECT * FROM ponencia WHERE id = :id AND asistencia = 1 LIMIT 1';
+
+            try{
+                return ($rows = parent::query($sql , ['id' => $this->id])) ? $rows[0] : false;
             } catch(Exception $e) {
                 throw $e;
             }

@@ -21,8 +21,8 @@
                     </div>
                     <div class="card-body pt-0">
                       <div class="card shadow-none">
-                      <div class="card-header">
-                        <ul class="nav nav-pills card-header-pills">
+                      <!-- <div class="card-header">
+                         <ul class="nav nav-pills card-header-pills">
                           <li class="nav-item">
                             <a class="nav-link active" href="#">Hoy</a>
                           </li>
@@ -30,97 +30,29 @@
                             <a class="nav-link" href="#">Mañana</a>
                           </li>
                           <li class="nav-item">
-                            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                           </li>
-                        </ul>
-                      </div>
+                        </ul> 
+                      </div> -->
                       <div class="card-body">
-                      <div class="row">
+                      <div class="row" id="ponencias">
 
-                                    <!-- <div class="col-12 mb-4 mb-md-0">
-                                        <div class="card mb-3 shadow-none">
-                                          <div class="row g-0">
-                                            <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                            <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/AngelSMRospigliosi.png' ?>" alt="Unsplash"></div>
-                                            </div>
-                                            <div class="col-md-8">
-                                              <div class="card-body text-left">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
-                                          </div>
-                                        </div>
-                                    </div> -->
-
-                                <div class="col-12 mb-4 mb-md-0" style="opacity:0.5"> 
-                                  <div class="card mb-3 shadow-none">
-                                    <div class="row g-0">
-                                      <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Llipita.jfif' ?>" alt="Unsplash"></div>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <div class="card-body text-left">
-                                          <h5 class="card-title">José Alfredo Tuyo Llipita</h5>
-                                          <p class="card-text">Por definir</p>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
-                                    </div>
+                        <!-- <div class="col-12 mb-4 mb-md-0">
+                            <div class="card mb-3 shadow-none">
+                              <div class="row g-0">
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/AngelSMRospigliosi.png' ?>" alt="Unsplash"></div>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body text-left">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                   </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
                               </div>
-
-                              <div class="col-12 mb-4 mb-md-0" style="opacity:0.5"> 
-                                  <div class="card mb-3 shadow-none">
-                                    <div class="row g-0">
-                                      <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing_Julissa.jpeg' ?>" alt="Unsplash"></div>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <div class="card-body text-left">
-                                          <h5 class="card-title">Julissa Milagros Gutiérrez Vargas</h5>
-                                          <p class="card-text">Implementación NIST Cybersecurity Framework</p>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
-                                    </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-12 mb-4 mb-md-0" style="opacity:0.5"> 
-                                  <div class="card mb-3 shadow-none">
-                                    <div class="row g-0">
-                                      <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/Ing.Herson.jfif' ?>" alt="Unsplash"></div>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <div class="card-body text-left">
-                                          <h5 class="card-title">Henry George Maquera Quispe</h5>
-                                          <p class="card-text">Por definir</p>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
-                                    </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-12 mb-4 mb-md-0" style="opacity:0.5"> 
-                                  <div class="card mb-3 shadow-none">
-                                    <div class="row g-0">
-                                      <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                      <div class="d-flex" style="width:100px;height:100px;border-radius:50%;overflow:hidden;"><img class="card-img-top" src="<?php echo IMAGES.'postmaster/ponentes/andreaimontes.jpg' ?>" alt="Unsplash"></div>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <div class="card-body text-left">
-                                          <h5 class="card-title">Andrea Montes Albarracín</h5>
-                                          <p class="card-text">Por definir</p>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-2 d-flex justify-content-center align-items-center"><a href="#" class="btn btn-primary">Marcar asistencia</a></div>
-                                    </div>
-                                  </div>
-                              </div>
+                            </div>
+                        </div> -->
 
                         </div>
                       </div>
@@ -150,3 +82,4 @@
 </main>
 
 <?php require_once INCLUDES.'template_footer.php'; ?>
+<script src="<?php echo JS.'panel/index.js' ?>"></script>
