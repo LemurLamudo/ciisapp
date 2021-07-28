@@ -5,12 +5,8 @@
         }
 
         public function index(){
-            $data =
-            [
-                'title' => 'Nuami Framework',
-                'bg'    =>  'dark'
-            ];
-            View::render('Nuami', $data);
+            $title = 'Home';
+            View::render('Nuami', compact('title'));
         }
 
         function test(){

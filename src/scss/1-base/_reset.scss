@@ -1,31 +1,32 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    overflow-x: hidden;
-    font-family: $font-1;
-    font-size: 1.5rem;
-    background-color: #f3f5f9;
+  overflow-x: hidden;
+  font-family: $font-1;
+  font-size: 1.5rem;
+  background-color: #f3f5f9;
 }
 
 a {
-    text-decoration: none;
-    color: $white;
+  text-decoration: none;
+  display: block;
+  color: $white;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
+  width: 100%;
 }

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-    <title>Congreso Internacional de Informática y Sistemas</title>
+    <title><?php echo $d->title ?> | Congreso Internacional de Informática y Sistemas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="_aCDFqLI3QdYZr7Nox7_RfyqGLpRlmLMEAOfEZQk3mQ">
     <meta name="keywords" content="XXII CIIS, xxii ciis, CIIS XXII, ciis xxii, ciis, tacna ciis, congreso internacional, conference, university, universidad">
@@ -22,13 +22,24 @@
     <style>
       @font-face{font-family:"Montserrat";font-weight:400;font-display:swap;src:url("<?php echo FONTS.'Montserrat-Regular.woff2'?>") format("woff2"),url("<?php echo FONTS.'Montserrat-Regular.woff'?>") format("woff")}@font-face{font-family:"Montserrat";font-weight:500;font-display:swap;src:url("<?php echo FONTS.'Montserrat-Medium.woff2'?>") format("woff2"),url("<?php echo FONTS.'Montserrat-Medium.woff'?>") format("woff")}@font-face{font-family:"Montserrat";font-weight:600;font-display:swap;src:url("<?php echo FONTS.'Montserrat-SemiBold.woff2'?>") format("woff2"),url("<?php echo FONTS.'Montserrat-SemiBold.woff'?>") format("woff")}@font-face{font-family:"Montserrat";font-weight:700;font-display:swap;src:url("<?php echo FONTS.'Montserrat-Bold.woff2'?>") format("woff2"),url("<?php echo FONTS.'Montserrat-Bold.woff'?>") format("woff")}@font-face{font-family:"Montserrat";font-weight:800;font-display:swap;src:url("<?php echo FONTS.'Montserrat-ExtraBold.woff2'?>") format("woff2"),url("<?php echo FONTS.'Montserrat-ExtraBold.woff'?>") format("woff")}
     </style>
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Bold.woff2'?>" type="font/woff2" crossorigin>
     <link rel="preload" href="<?php echo FONTS.'Montserrat-Regular.woff2'?>" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-SemiBold.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
+
+    <?php if($d->title == 'Home') { ?>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1627182354787' ?>">   
-	  <script src="<?php echo JS.'global.js' ?>"></script>
+    <?php } ?>
+    <?php if($d->title == 'Postmaster') {?>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <?php } ?>
+    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1627494850532' ?>">
 </head>
 <header>
 	<input type="hidden" id="images" value="<?php echo IMAGES ?>">
@@ -54,7 +65,7 @@
                     <nav class="navbar">
                         <ul class="nav-list">
                           <li class="nav-item"><a class="nav-link" href="<?php echo URL . 'home'?>">Inicio</a></li>
-                          <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
+                          <li class="nav-item"><a class="nav-link" href="http://esis.unjbg.edu.pe/" target="_blank">Nosotros</a></li>
                           <li class="nav-item"><div class="nav-link">Eventos <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
                             <ul class="sub-menu">
                               <li><a href="postmaster" class="sub">Postmaster</a></li>

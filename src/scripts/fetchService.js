@@ -89,7 +89,10 @@ const postmasterService = (function () {
   };
 
   const getPonentes = async () => {
-    return await fetchService.post("get_ponentes_postmaster");
+    const settings = {
+      body: new FormData(),
+    };
+    return await fetchService.get("get_ponentes_postmaster", settings);
   };
 
   return {

@@ -11,7 +11,9 @@
 
         public function index(){
             validate_token();
-            View::render('ponencias');
+            $title = "Postmaster";
+
+            View::render('ponencias', compact('title'));
         }
 
         public function listar(){

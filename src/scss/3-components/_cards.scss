@@ -30,7 +30,7 @@
   &-icon {
     width: 4.5rem;
     position: absolute;
-    top: 0;
+    top: 2.2rem;
     right: 0;
     padding-left: 1rem;
   }
@@ -39,4 +39,8 @@
     display: flex;
     justify-content: flex-start;
   }
+}
+
+:root {
+  --swiper-theme-color: #3f4ce7;
 }

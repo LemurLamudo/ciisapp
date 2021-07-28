@@ -85,10 +85,19 @@
   <section class="courses section" style="background: #fff">
       <div class="container">
           <h2 class="text-left section-title">PONENTES</h2>
-          <div class="card-row">
+          <div class="card-section">
               <div class="col-12 pl-5 pr-5">
-                  <div class="card-list" id="ponencias">
-                      
+                  <div class="card-list" style="padding-bottom:40px">
+                    <div class="swiper-container" style="overflow: visible;">
+                      <div class="swiper-wrapper" id="ponencias">
+
+                      </div>
+
+                      <div class="swiper-pagination" style="bottom:-40px"></div>
+
+                      <!-- <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div> -->
+                    </div>
                   </div>
               </div>
           </div>
@@ -163,7 +172,7 @@
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
                                 target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="35"><title>Download</title><path d="M336 176h40a40 40 0 0140 40v208a40 40 0 01-40 40H136a40 40 0 01-40-40V216a40 40 0 0140-40h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 272l80 80 80-80M256 48v288"/></svg><span>Descargar presentación</span></a>
-                    </div>1
+                    </div>
             </div>
             <div class="schedule__event">
                     <div class="schedule__event--time">
@@ -287,5 +296,5 @@
 </main>
 
 <?php require_once INCLUDES.'inc_footer.php'; ?>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <?php require_once INCLUDES.'inc_scripts.php'; ?>
-<script src="<?php echo JS.'postmaster.js' ?>"></script>

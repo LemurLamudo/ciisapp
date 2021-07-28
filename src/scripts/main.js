@@ -7,6 +7,8 @@
 
     const init = function () {
       addListeners();
+
+      if (document.querySelector("#ponencias")) loadPonentesPostmaster();
     };
 
     const headerStyling = () => {
@@ -75,6 +77,36 @@
             e.target.insertAdjacentElement("beforeEnd", message);
           });
       }
+    };
+
+    const loadPonentesPostmaster = () => {
+      postmasterService.getPonentes().then((res) => {
+        let fragment = document.createDocumentFragment();
+        if (res) {
+          res.data.forEach((ponente) => {
+            let item = document.createElement("div");
+            item.className = "swiper-slide";
+            item.innerHTML = Templates.cardTemplate(ponente);
+            fragment.appendChild(item);
+          });
+        }
+        document.querySelector("#ponencias").appendChild(fragment);
+
+        const swiper = new Swiper(".swiper-container", {
+          slidesPerView: 4,
+          loop: true,
+          slidesPerGroup: 4,
+          spaceBetween: 40,
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
     };
 
     const addListeners = () => {
