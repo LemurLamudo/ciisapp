@@ -51,7 +51,7 @@
     const addConfirmationMessage = () => {
       let conf = document.createElement("div");
       conf.className = "success-message";
-      conf.innerHTML = `<img src="assets/images/icons/icon-check.svg" alt="confirmation icon" class="check-icon"><span class="confirmation-message">¡Gracias por preinscribirte!</span>`;
+      conf.innerHTML = `<img src="assets/images/icons/icon-check.svg" alt="confirmation icon" class="check-icon"><span class="confirmation-message">Gracias por preinscribirte, revisa tu correo.</span>`;
       document
         .querySelector(".hero-content")
         .replaceChild(conf, document.querySelector(".bee_add_preinscripcion"));
