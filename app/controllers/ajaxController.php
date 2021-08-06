@@ -39,6 +39,9 @@
                 
                 $message =  mensaje_email($usuario->email, $token);
 
+                $data  = $usuario->token();
+                if($data) json_output(json_build(400, null, "Ya se registró, intentelo más tarde!"));
+                
                 if($usuario->one()){
                     json_output(json_build(400, null, "Correo ya registrado!"));
                 }
@@ -81,9 +84,6 @@
 
                 $usuario           = new usuarioModel();
                 $usuario->token    = $_POST['token'];
-
-                $valid = $csrf->validate($_POST['token'], false);
-                if(!$valid) json_output(json_build(400, null, "Registro caducado!"));
 
                 $data  = $usuario->token();
                 if(!$data) json_output(json_build(400, null, "Token no encontrado!"));
