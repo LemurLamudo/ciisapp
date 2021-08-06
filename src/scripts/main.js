@@ -72,7 +72,7 @@
             button.classList.remove("loading");
             const message = document.createElement("p");
             message.className = "error-label";
-            message.textContent = err.data ? `${err.data} ya esta preinscrito` : "Ocurrio un error";
+            message.textContent = err.message ?? "Ocurrio un error";
             e.target.email.classList.add("isInvalid");
             e.target.insertAdjacentElement("beforeEnd", message);
           });

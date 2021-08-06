@@ -40,7 +40,7 @@
                 $message =  mensaje_email($usuario->email, $token);
 
                 if($usuario->one()){
-                    json_output(json_build(200, null, "Correo ya registrado!"));
+                    json_output(json_build(400, null, "Correo ya registrado!"));
                 }
 
                 if(!$id = $usuario->add()){

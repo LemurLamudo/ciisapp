@@ -41,7 +41,7 @@ const fetchService = (function () {
         ? json
         : Promise.reject({
             status: response.status,
-            message: json.msj,
+            message: json.msg,
             data: json.data,
           });
     } catch (error) {
