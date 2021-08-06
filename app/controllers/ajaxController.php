@@ -92,8 +92,10 @@
                 $usuario->name              = $_POST['name'];
                 $usuario->type_document     = $_POST['tipo_doc'];
                 $usuario->number_document   = $_POST['number'];
+                $usuario->email             = $_POST['email'];
 
                 if($info = $usuario->update()){
+                  $info = $usuario->one();
                   $data =  Auth::SignIn($info);
                   json_output(json_build(200, $data, "Usuario " . $usuario->name . " registrado!"));
                 }
