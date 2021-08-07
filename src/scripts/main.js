@@ -18,8 +18,12 @@
     };
 
     const toggleButton = () => {
+      if (!nav.classList.contains("active")) {
+        nav.classList.add("fixed");
+      } else {
+        window.pageYOffset > 0 ? nav.classList.add("fixed") : nav.classList.remove("fixed");
+      }
       nav.classList.toggle("active");
-      nav.classList.toggle("fixed");
     };
 
     const toggleSubmenu = (submenu) => {
@@ -93,10 +97,10 @@
         document.querySelector("#ponencias").appendChild(fragment);
 
         const swiper = new Swiper(".swiper-container", {
-          slidesPerView: 4,
           loop: true,
-          slidesPerGroup: 4,
-          spaceBetween: 40,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 10,
           // navigation: {
           //   nextEl: ".swiper-button-next",
           //   prevEl: ".swiper-button-prev",
@@ -104,6 +108,23 @@
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
+          },
+          breakpoints: {
+            547: {
+              slidesPerView: 2,
+              slidesPerGroup: 3,
+              spaceBetween: 20,
+            },
+            798: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4,
+              slidesPerGroup: 4,
+              spaceBetween: 40,
+            },
           },
         });
       });

@@ -2,11 +2,12 @@
 
 <main>
   <section class="register-today section hero-postmaster">
-      <div class="hero-content">
-        <h1>XVIII POSTMASTER</h1>
-        <p class="sub-header">Encuentro de egresados</p>
+      <div class="container">
+        <div class="hero-content">
+          <h1>XVIII POSTMASTER</h1>
+          <p class="sub-header">Encuentro de egresados</p>
+        </div>
       </div>
-      <!-- <img class="img-src" src="<?php echo IMAGES."postmaster/portada.png"?>" alt="#" style=""> -->
   </section>
   
   <section class="about-sec">
@@ -31,7 +32,7 @@
                     <p>Facebook y Youtube</p>
                   </div>
                 </div>
-                <div class="mt-4">
+                <div class="about-footer">
                     <!-- Enlace para Registrarse -->
                     <a class="btn black primary" href="<?php echo URL . 'home'?>">Inscríbete</a>
                 </div>
@@ -46,39 +47,35 @@
   
   <section class="page-section">
       <div class="container">
-          <div class="card-row">
-              <div class="col-lg-6 col-md-12 col-12">
-                  <div class="text-content text-justify">
+              <div class="section-centered">
+                  <div class="">
                       <h2 class="section-title-sec"> CONVERSATORIO Y DEBATE: Situación actual y trabajo virtual</h2>
                       <p> Terminaremos el ciclo de conferencias con un debate sobre cómo nuestros
                           egresados de la carrera de Ingeniería en Informática y Sistemas enfrentaron en sus trabajos la
-                          actual situación del aislamiento social que vivimos debido a la pandemia del Covid-19 que afecta
+                          actual situación del aislamiento social que vivimos debido a la pandemia del COVID-19 que afecta
                           al mundo.
                       </p>
-                  </div>
-              </div>
-              <div class="col-lg-6 col-md-12 col-12 text-center">
-                  <div class="card-row btn-list">
-                      <div class="btn btn-rounded text-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="50" fill="#fff"><title>Logo Facebook</title><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
-                          <div class="text-center mt-4">
+                      <div class="btn-list">
+                      <div class="btn text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="30" fill="#fff"><title>Logo Facebook</title><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+                          <div class="text-center">
                               <!-- Enlace para Registrarse -->
                               <a class="white primary"
                                   href="https://www.facebook.com/watch/live/?v=623288185050733&ref=notif&notif_id=1599854339227909&notif_t=live_video"
                                   target="_black">Ver por Facebook</a>
                           </div>
                       </div>
-                      <div class="btn btn-rounded text-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="50" fill="#fff"><title>Logo Youtube</title><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
-                          <div class="text-center mt-4">
+                      <div class="btn text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="30" fill="#fff"><title>Logo Youtube</title><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
+                          <div class="text-center">
                               <!-- Enlace para Registrarse -->
                               <a class="white primary" href="https://www.youtube.com/watch?v=y3LRGF4D_eE"
                               target="_black">Ver por Youtube</a>
                           </div>
                       </div>
                   </div>
+                  </div>
               </div>
-          </div>
       </div>
   </section>
   

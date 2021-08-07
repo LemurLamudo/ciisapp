@@ -4,7 +4,7 @@ const Templates = (function () {
   const cardTemplate = ({ photo, name }) => {
     const html = `<div class="card mb-3">
         <div class="card-header">
-            <img src="${URI}postmaster/ponentes/${photo}" height="280" alt="#">
+            <img src="${URI}postmaster/ponentes/${photo}" alt="#">
         </div>
         <div class="card-body">
             <div class="name-price text-right">

@@ -7,6 +7,14 @@
 }
 
 .card {
+  &-header img {
+    height: 310px;
+
+    @include mobile {
+      height: 360px;
+    }
+  }
+
   &-body {
     position: relative;
     padding: 2.2rem 0;
