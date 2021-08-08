@@ -152,7 +152,7 @@
 .home-event-date-wrapper {
   display: flex;
   margin-right: 51px;
-  padding: 19px 25px 24px;
+  padding: 19px 18px 20px;
   flex-direction: column;
   align-items: center;
   border-style: solid;
@@ -163,7 +163,7 @@
 
   .home-event-day {
     color: #fbfbfd;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1em;
     font-weight: 700;
   }
@@ -171,7 +171,7 @@
   .home-event-month {
     margin-bottom: 3px;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1em;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -181,7 +181,7 @@
   .home-event-year {
     margin-bottom: 3px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2em;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -196,12 +196,27 @@
       margin-top: 7px;
       margin-bottom: 7px;
       background-color: #5e5f79;
+      @include tablet {
+        margin: 0 7px;
+      }
     }
     &.home-event-date {
       height: 3px;
       margin-top: 13px;
       margin-bottom: 13px;
       background-color: #fff;
+      @include tablet {
+        margin: 0 13px;
+      }
     }
+
+    @include tablet {
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  @include tablet {
+    display: none;
   }
 }

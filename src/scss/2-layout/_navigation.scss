@@ -89,7 +89,7 @@ header {
     flex-direction: row;
 
     .nav-item {
-      @include tablet {
+      @include laptop {
         border-top: 1px solid #e0dee9;
 
         &:last-child {
@@ -198,6 +198,9 @@ header {
     &.active {
       display: block;
       max-height: initial;
+      @include laptop {
+        border-top: 1px solid #e6e6e6;
+      }
     }
 
     @include laptop {
@@ -209,7 +212,7 @@ header {
       overflow: hidden;
       border-radius: 0;
       padding: 0;
-      border-top: 1px solid #e6e6e6;
+      box-shadow: none;
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php require_once INCLUDES.'inc_header.php'; ?>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <div class="hero-content text-white">
                     <h1 class="text-white">XXII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS</h1>
@@ -35,9 +35,8 @@
                     </form> 
                 </div> 
             </div>
-        </section>
+        </section> -->
 
-        <!-- hero-postmaster
           <section class="hero">
               <div class="container">
                   <div class="hero-content text-white">
@@ -87,16 +86,16 @@
                           </div>
                           <form class="bee_add_preinscripcion">
                               <div class="input-group">
-                                  <input type="email" name="email" class="form-input" id="email" placeholder="Ingresa tu email" required="">
-                                  <button type="submit" class="btn btn-hero input-group-btn">Pre-inscríbete</button>
+                                  <input type="email" name="email" class="form-input" id="email" placeholder="Ingresa tu email" required>
+                                  <button type="submit" class="btn btn-hero input-group-btn">Inscríbete</button>
                               </div>
                           </form>
+                          <a href="postmaster" class="btn-link link-hero">Conoce más sobre el evento <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><polyline points="268 112 412 256 268 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></polyline><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"></line></svg></a>
                         </div>
                       </div>
                   </div> 
               </div>
           </section>
-        end hero-postmaster -->
 
         <div class="hero-info">
             <div class="hero-contacts">

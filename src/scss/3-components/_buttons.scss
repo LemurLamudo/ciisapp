@@ -54,7 +54,7 @@
 
 .input-group-btn {
   border-radius: 0 2px 2px 0;
-  min-width: 162px;
+  min-width: 140px;
   min-height: 53px;
   padding: 1.5rem 2rem;
   position: relative;
@@ -97,6 +97,17 @@
   font-weight: 600;
   svg {
     vertical-align: sub;
+  }
+
+  &.link-hero {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -5,7 +5,7 @@
         }
 
         public function index(){
-            $title = 'Home';
+            $title = 'Inicio';
             View::render('Nuami', compact('title'));
         }
 

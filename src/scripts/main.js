@@ -52,12 +52,23 @@
       }
     };
 
+    const showError = (element, error) => {
+      const messageElement = document.createElement("p");
+      messageElement.className = "error-label";
+      messageElement.textContent = error.message ?? "Ocurrio un error";
+      element.email.classList.add("isInvalid");
+      if (element.lastElementChild.className === "error-label") {
+        element.removeChild(element.lastElementChild);
+      }
+      element.insertAdjacentElement("beforeEnd", messageElement);
+    };
+
     const addConfirmationMessage = () => {
       let conf = document.createElement("div");
       conf.className = "success-message";
-      conf.innerHTML = `<img src="assets/images/icons/icon-check.svg" alt="confirmation icon" class="check-icon"><span class="confirmation-message">Gracias por preinscribirte, revisa tu correo.</span>`;
+      conf.innerHTML = `<img src="assets/images/icons/icon-check.svg" alt="confirmation icon" class="check-icon"><span class="confirmation-message">Para finalizar tu inscripción, revisa tu correo.</span>`;
       document
-        .querySelector(".hero-content")
+        .querySelector(".hero-event")
         .replaceChild(conf, document.querySelector(".bee_add_preinscripcion"));
     };
 
@@ -69,16 +80,12 @@
       if (fieldValidation.validate("email", e.target.email)) {
         postmasterService
           .preinscribir(data)
-          .then((res) => {
+          .then(() => {
             addConfirmationMessage();
           })
           .catch((err) => {
             button.classList.remove("loading");
-            const message = document.createElement("p");
-            message.className = "error-label";
-            message.textContent = err.message ?? "Ocurrio un error";
-            e.target.email.classList.add("isInvalid");
-            e.target.insertAdjacentElement("beforeEnd", message);
+            showError(e.target, err);
           });
       }
     };
@@ -101,10 +108,6 @@
           slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 10,
-          // navigation: {
-          //   nextEl: ".swiper-button-next",
-          //   prevEl: ".swiper-button-prev",
-          // },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
