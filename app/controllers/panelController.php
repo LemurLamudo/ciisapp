@@ -44,7 +44,7 @@
                 $asistencia->user_id = $info->data->id;
                 $asistencia->ponencia_id = $_POST["ponencia_id"];
                 $asistencia->fecha = date('Y-m-d');
-                $asistencia->hora = date('H:i:sP');
+                $asistencia->hora = date('H:i:s');
 
                 $data     = $asistencia->asistencia();
                 json_output(json_build(201, $data));

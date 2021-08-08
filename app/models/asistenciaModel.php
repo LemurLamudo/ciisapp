@@ -24,6 +24,8 @@
             }
         }
 
+        
+
         public function asistencia(){
             $sql = 'INSERT INTO asistencia(fecha, hora, user_id, ponencia_id) 
             VALUES(:fecha, :hora, :user_id , :ponencia_id)';

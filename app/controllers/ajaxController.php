@@ -92,7 +92,7 @@
                 $usuario->name              = $_POST['name'];
                 $usuario->type_document     = $_POST['tipo_doc'];
                 $usuario->number_document   = $_POST['number'];
-                $usuario->email             = $_POST['email'];
+                $usuario->email             = $data['email'];
 
                 if($info = $usuario->update()){
                   $info = $usuario->one();
