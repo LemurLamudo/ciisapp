@@ -36,10 +36,15 @@
          * @return ponencia
          */
         public function one(){
-            $sql = 'SELECT * FROM ponencia WHERE id = :id AND asistencia = 1 LIMIT 1';
+            $sql = 'SELECT * FROM ponencia WHERE id = :id AND asistencia = 1 AND code = :code LIMIT 1';
+            
+            $data = [
+                'code'   =>  $this->code,
+                'id'     =>  $this->id
+            ];
 
             try{
-                return ($rows = parent::query($sql , ['id' => $this->id])) ? $rows[0] : false;
+                return ($rows = parent::query($sql ,$data)) ? $rows[0] : false;
             } catch(Exception $e) {
                 throw $e;
             }

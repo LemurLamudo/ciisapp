@@ -62,6 +62,7 @@
                                     <p class="card-text">${ponente.name_tema}</p>
                                   </div>
                                 </div>
+                                <input class="form-input py-2" type="text" placeholder="Ingresu código" name="code" id="code">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center"><button class="btn btn-primary" onclick="marcar_asistencia(${ponente.ponencia_id})">Marcar asistencia</button></div>
                               </div>
                             </div>
@@ -78,7 +79,10 @@
 
 async function marcar_asistencia($id){
     var formData = new FormData();
+    var $code = $('#code').val();
+
     formData.append('ponencia_id', $id);
+    formData.append('code', $code);
     $asistencia = await add_type('panel/asistencia', formData);
 
     if($asistencia != null){

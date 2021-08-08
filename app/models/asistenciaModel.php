@@ -8,6 +8,7 @@
         public $user_id;
         public $ponencia_id;
         public $status;
+        public $code;
         
         /**
          *
@@ -23,8 +24,6 @@
                 throw $e;
             }
         }
-
-        
 
         public function asistencia(){
             $sql = 'INSERT INTO asistencia(fecha, hora, user_id, ponencia_id) 

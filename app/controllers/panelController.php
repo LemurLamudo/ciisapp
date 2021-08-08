@@ -34,11 +34,11 @@
                 date_default_timezone_set("America/Lima");
 
                 $postmaster = new postmasterModel();
-                $postmaster->id = $_POST["ponencia_id"];
 
-                if(!$postmaster->one()){
-                    json_output(json_build(400, null, "Error de Asistencia!"));
-                }
+                $postmaster->id = $_POST["ponencia_id"];
+                $postmaster->code = $_POST["code"];
+                
+                if(!$postmaster->one()) json_output(json_build(400, null, "Error de Asistencia!"));
 
                 $asistencia          = new asistenciaModel();
                 $asistencia->user_id = $info->data->id;

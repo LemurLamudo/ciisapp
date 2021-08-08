@@ -26,7 +26,7 @@
                     <form class="bee_add_sigIn">
                         <div>
                             <div class="font-bold form-label">Email</div>
-                            <input class="form-input py-4" type="email" name="email" id="email">
+                            <input class="form-input py-4" type="email" placeholder="Ingresu su correo" name="email" id="email">
                         </div>
                         <div class="mt-4">
                             <div class="flex justify-between items-center">
@@ -34,7 +34,7 @@
                                     Contraseña
                                 </div>
                             </div>
-                              <input class="form-input py-4" type="password" name="number" id="number">
+                              <input class="form-input py-4" type="password" placeholder="Ingrese su dni" name="number" id="number">
                           </div>
                           <input type="hidden" name="token" id="token" value="<?php echo $token ?>">
                           <div class="form-foot">
