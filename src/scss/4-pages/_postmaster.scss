@@ -12,24 +12,52 @@
 
   .btn {
     margin-top: 3.5rem;
+    &:hover {
+      background-color: #1a4ccc;
+      color: #fff;
+    }
   }
 
   .card-row {
     align-items: center;
 
     > div:first-child {
-      flex: 1.5;
-      padding-right: 9rem;
+      padding-right: 7rem;
+
+      @include tablet {
+        padding-right: 0;
+
+        .about-footer {
+          text-align: center;
+        }
+      }
     }
     .image-wrapper {
       box-shadow: 0 14px 54px 0 rgb(26 36 71 / 24%);
       line-height: 0;
+      @include laptop {
+        margin-top: 4rem;
+        align-self: start;
+      }
+
+      @include tablet {
+        align-self: center;
+      }
     }
   }
 
   .about-extra {
     display: flex;
     margin-top: 1rem;
+    @include mobile {
+      flex-direction: column;
+      > :first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  @include tablet {
+    text-align: center;
   }
 }
 
@@ -62,16 +90,30 @@
         margin-left: 36px;
         background-color: #001131;
       }
+
+      @include tablet {
+        font-size: 1.5rem;
+        flex-basis: 24%;
+      }
     }
 
     &--info {
       flex: 1;
       color: $secondary;
+      font-size: 1.4rem;
 
       &-title {
         font-size: 2.4rem;
         font-weight: 700;
         margin-bottom: 1.2rem;
+
+        @include tablet {
+          font-size: 1.8rem;
+        }
+      }
+
+      @include tablet {
+        padding: 0 1.5rem;
       }
     }
 
@@ -83,22 +125,66 @@
         padding: 0;
         border: none;
         display: flex;
+        justify-content: center;
 
         svg {
           margin-right: 0.8rem;
+          @include tablet {
+            max-width: 2.8rem;
+            margin-right: 0;
+          }
         }
       }
+
+      span {
+        @include tablet {
+          display: none;
+        }
+      }
+
+      @include tablet {
+        flex-basis: 3rem;
+      }
+    }
+
+    @include tablet {
+      padding: 2rem 1rem;
+    }
+
+    @include mobile {
+      padding: 2rem 0;
     }
   }
 }
 
 .btn-list {
-  flex-direction: column;
-  padding: 0 12rem;
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
 
   .btn {
-    margin-bottom: 1rem;
     display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 1.2rem 2rem;
+    justify-content: center;
+    width: 100%;
+    > :last-child {
+      margin-left: 1rem;
+    }
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+    &:hover {
+      background-color: #1a4ccc;
+      border-color: #1a4ccc;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
     align-items: center;
   }
 }

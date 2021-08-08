@@ -125,10 +125,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    height: 100%;
+
+    h1 {
+      @include tablet {
+        font-size: 3.6rem;
+      }
+    }
 
     .sub-header {
       font-size: 2rem;
       font-weight: 500;
+      @include tablet {
+        font-size: 1.6rem;
+      }
     }
   }
 }

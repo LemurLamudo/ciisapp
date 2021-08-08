@@ -39,7 +39,7 @@
     <?php if($d->title == 'Postmaster') {?>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <?php } ?>
-    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1628217798944' ?>">
+    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1628307425264' ?>">
 </head>
 <header>
 	<input type="hidden" id="images" value="<?php echo IMAGES ?>">
