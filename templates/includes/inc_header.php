@@ -33,13 +33,13 @@
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-SemiBold.woff2'?>" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="<?php echo FONTS.'Montserrat-Medium.woff2'?>" type="font/woff2" crossorigin="anonymous">
 
-    <?php if($d->title == 'Home') { ?>
+    <?php if($d->title == 'Inicio') { ?>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     <?php } ?>
     <?php if($d->title == 'Postmaster') {?>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <?php } ?>
-    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1628441839847' ?>">
+    <link rel="stylesheet" href="<?php echo CSS.'main.css?cb=1628462622928' ?>">
 </head>
 <header>
 	<input type="hidden" id="images" value="<?php echo IMAGES ?>">

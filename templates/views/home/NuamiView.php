@@ -53,15 +53,8 @@
                         </div>
                         <div class="hero-event">
                           <p>El XXII CIIS presenta:</p>
-                          <h1 class="text-white" style="
-                              margin-bottom: 0;
-                              margin-top: 15px;
-                              font-size: 64px;
-                          ">XVIII</h1>
-                            <h1 class="text-white" style="
-                            margin-top: 0;
-                            font-size: 64px;
-                        ">POSTMASTER</h1>
+                          <h1 class="text-white">XVIII</h1>
+                            <h1 class="text-white">POSTMASTER</h1>
                           <p class="sub-header">Encuentro de egresados</p>
                           <div class="countdown">
                               <div class="timer">
