@@ -116,8 +116,8 @@
             $usuario->number_document   = $_POST['number'];
             $usuario->token    = $_POST['token'];
 
-            $valid = $csrf->validate($_POST['token'], false);
-            if(!$valid) json_output(json_build(400, null, "Registro no válido!"));
+            // $valid = $csrf->validate($_POST['token'], false);
+            // if(!$valid) json_output(json_build(400, null, "Registro no válido!"));
 
             if($info = $usuario->signIn()){
               $data =  Auth::SignIn($info);
