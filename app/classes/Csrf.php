@@ -8,18 +8,19 @@
 
         public function __construct()
         {
-            if(!isset($_SESSION['csrf_token'])) {
-                $this->generate();
-                $_SESSION['csrf_token'] =
-                [
-                'token'      => $this->token,
-                'expiration' => $this->token_expiration
-                ];
-                return $this;
-            }
+            $this->generate();
+            // if(!isset($_SESSION['csrf_token'])) {
+            //     $this->generate();
+            //     $_SESSION['csrf_token'] =
+            //     [
+            //     'token'      => $this->token,
+            //     'expiration' => $this->token_expiration
+            //     ];
+            //     return $this;
+            // }
 
-            $this->token            = $_SESSION['csrf_token']['token'];
-            $this->token_expiration = $_SESSION['csrf_token']['expiration'];
+            // $this->token            = $_SESSION['csrf_token']['token'];
+            // $this->token_expiration = $_SESSION['csrf_token']['expiration'];
 
             return $this;
         }
