@@ -61,7 +61,7 @@
                 $mail->Username ='nain.acero24@gmail.com';
                 $mail->Password = 'dmtcbkxzjxlvnnph';
 
-                $mail->setFrom('nain.acero24@gmail.com', 'XXII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS');
+                $mail->setFrom('nain.acero24@gmail.com', 'XXIII CONGRESO INTERNACIONAL DE INFORMÁTICA Y SISTEMAS');
                 // $mail->AddAddress('a_nacerom@unjbg.edu.pe');
                 $mail->AddAddress($usuario->email);
                 $mail->isHTML(true);
