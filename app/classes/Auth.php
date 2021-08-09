@@ -15,7 +15,7 @@ class Auth
         $time = time();
 
         $token = array(
-            'exp' => $time + (60*60),
+            'exp' => $time + (60*60*60*60),
             'aud' => self::Aud(),
             'data' => $data
         );

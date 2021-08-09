@@ -1,4 +1,4 @@
-<?php require_once INCLUDES.'template_header.php'; ?>
+<!-- <?php require_once INCLUDES.'template_header.php'; ?>
 
 <main class="content">
     <div class="container-fluid p-0">
@@ -49,4 +49,4 @@
 </main>
 
 <?php require_once INCLUDES.'template_footer.php'; ?>
-<script src="<?php echo JS.'ponencia/listar.js' ?>"></script>
+<script src="<?php echo JS.'ponencia/listar.js' ?>"></script> -->

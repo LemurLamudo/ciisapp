@@ -59,6 +59,6 @@
     /**
      * Controlador Defecto
     */
-    define('DEFAULT_CONTROLLER'         , 'postmaster');
+    define('DEFAULT_CONTROLLER'         , 'home');
     define('DEFAULT_ERROR_CONTROLLER'   , 'error');
     define('DEFAULT_METHOD'             , 'index');

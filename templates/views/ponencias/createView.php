@@ -1,4 +1,4 @@
-<?php require_once INCLUDES.'template_header.php'; ?>
+<!-- <?php require_once INCLUDES.'template_header.php'; ?>
 <link href="<?php echo PLUGINS.'dropzone/dropzone.min.css' ?>" rel="stylesheet">
 
 <style>
@@ -162,7 +162,6 @@
                             <div id="actions" class="row">
                                 <div class="col-lg-7">
                                     <br>
-                                    <!-- The fileinput-button span is used to style the file input field as button -->
                                     <span class="btn btn-success fileinput-button">
                                         <i class="glyphicon glyphicon-plus"></i>
                                         <span>Subir imagen ...</span>
@@ -178,7 +177,6 @@
                                 </div>
                         
                                 <div class="col-lg-5">
-                                    <!-- The global file processing state -->
                                     <span class="fileupload-process">
                                         <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
                                             <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
@@ -189,7 +187,6 @@
                         
                             <div class="table table-striped files" id="previews">
                                 <div id="template" class="file-row row">
-                                    <!-- This is used as the file preview template -->
                                     <div class="col-xs-12 col-lg-3">
                                         <span class="preview" style="width:160px;height:160px;">
                                             <img data-dz-thumbnail />
@@ -231,4 +228,4 @@
 </main>
 
 <?php require_once INCLUDES.'template_footer.php'; ?>
-<script src="<?php echo JS.'ponencia/create.js' ?>"></script>
+<script src="<?php echo JS.'ponencia/create.js' ?>"></script> -->
