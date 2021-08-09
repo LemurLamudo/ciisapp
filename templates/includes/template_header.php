@@ -1,7 +1,7 @@
 <?php 
 	$uri = $_SERVER["REQUEST_URI"];
 	$detail = explode("?", $uri);
-	$aux = substr($detail[0], 9, strlen($detail[0]));
+	$aux = substr($detail[0], 1, strlen($detail[0]));
 ?>
 <!DOCTYPE html>
 <html lang="es">
