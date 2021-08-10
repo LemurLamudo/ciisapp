@@ -1,0 +1,151 @@
+.certificate {
+  background: url("../images/certificado/certificado_bg.jpeg");
+  background-size: cover;
+  font-family: "Segoe UI", sans-serif;
+  /* font-size: clamp(5px, 0.74vw, 100px); */
+  user-select: none;
+  aspect-ratio: 16 / 9;
+}
+/* 
+@media screen and (orientation: portrait) {
+  .certificate {
+    font-size: clamp(5px, 0.74vh, 100px);
+  }
+} */
+
+.certificate-h2 {
+  display: block;
+  font-weight: 800;
+}
+
+.certificate-container {
+  padding-left: 12em;
+}
+.certificate .certificate-row {
+  vertical-align: middle;
+}
+
+.certificate .certificate-row:first-child {
+  padding-top: 0.6em;
+  padding-left: 5%;
+}
+
+.certificate .img-div {
+  display: inline-block;
+  width: 23%;
+  margin-right: 1%;
+  vertical-align: middle;
+  font-size: 0.6em;
+}
+
+.certificate .img-div img {
+  height: 3.5em;
+}
+
+.certificate .img-div:last-child {
+  margin-right: 0;
+}
+
+.certificate .img-div:last-child img {
+  height: unset;
+  width: 10em;
+}
+
+.certificate .temarios {
+  display: table-cell;
+  width: 25%;
+  vertical-align: top;
+  padding-right: 1em;
+  border-right: 0.2em solid #0080fb;
+}
+
+.certificate .temarios .certificate-h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.certificate .certificate-main {
+  display: table-cell;
+  padding: 0 1em;
+  width: 60%;
+}
+
+.certificate .certificate-main .certificate-h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 800;
+}
+
+.certificate .div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.certificate .div:last-child {
+  margin-left: 3px;
+  max-width: 65%;
+}
+
+.certificate .title {
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.certificate .title span:first-child {
+  color: #0080fb;
+}
+
+.certificate .certificate-table {
+  display: table-row;
+}
+.certificate .table-row {
+  display: table-row;
+}
+
+.certificate .certificate-p,
+.certificate li {
+  font-size: 1em;
+}
+
+.certificate .nombre-participante {
+  display: block;
+  padding: 0.3em 0;
+  font-size: 1.5em;
+}
+
+.certificate .tipo-participante {
+  font-weight: 800;
+  display: block;
+  padding: 0.3em 0;
+  font-size: 1.5em;
+}
+
+.certificate .certificate-row:last-child {
+  margin-top: 5em;
+}
+
+.certificate .firma {
+  display: inline-block;
+  margin-left: 0.8em;
+}
+
+.certificate .firma .certificate-p {
+  font-size: 0.65em;
+}
+
+.certificate .firma:first-child {
+  margin-left: 0;
+}
+
+.certificate .line {
+  background: #555;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.certificate ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
