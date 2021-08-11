@@ -22,7 +22,8 @@
                 INNER JOIN ponente as p ON c.id = p.user_id 
                 INNER JOIN paises as ps ON ps.id = p.pais_id 
                 INNER JOIN ponencia as pc ON p.id = pc.ponente_id 
-                WHERE c.role = "ROLE_PONENTE"';
+                WHERE c.role = "ROLE_PONENTE"
+                ORDER BY ponencia.hora_ini';
 
             try{
                 return ($rows = parent::query($sql)) ? $rows : false;
