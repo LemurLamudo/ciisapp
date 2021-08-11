@@ -179,7 +179,7 @@
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">Christian Nikolai Cáceres Sosa</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-sub">Riesgos tecnológicos para ingenieros</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
