@@ -17,6 +17,7 @@
          * @return @List<Postmaster>
          */
         public function all(){
+            
             $sql = 'SELECT c.id, c.photo, c.name, p.anio, ps.name as name_pais , pc.nombre as name_tema, pc.status as status_ponencia, pc.id as ponencia_id, pc.asistencia, pc.hora_ini, pc.hora_fin
                 FROM users as c 
                 INNER JOIN ponente as p ON c.id = p.user_id 
