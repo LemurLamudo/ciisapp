@@ -134,7 +134,7 @@
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">José Alfredo Tuyo Llipita</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-sub">Soporte Tecnológico en entidades electorales - JNE</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
@@ -145,7 +145,7 @@
                     <div class="schedule__event--time">
                         <div class="schedule__event--time-start"> 10:10 am</div>
                         <div class="schedule__event--time-dash"></div>
-                        <div class="schedule__event--time-end"> 10:50 am</div>
+                        <div class="schedule__event--time-end"> 10:40 am</div>
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">Julissa Milagros Gutiérrez Vargas</div>
@@ -160,11 +160,11 @@
                     <div class="schedule__event--time">
                         <div class="schedule__event--time-start"> 10:50 am</div>
                         <div class="schedule__event--time-dash"></div>
-                        <div class="schedule__event--time-end"> 11:30 am</div>
+                        <div class="schedule__event--time-end"> 11:20 am</div>
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">Henry George Maquera Quispe</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-sub">Gestión de servicios en la transformación, caso de estudio región centro.</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
@@ -203,8 +203,8 @@
                         <div class="schedule__event--time-end"> 14:30 pm</div>
                     </div>
                     <div class="schedule__event--info">
-                            <div class="schedule__event--info-title">Ponente por definir</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-title">Ricardo Jose Linares Juarez</div>
+                            <div class="schedule__event--info-sub">Big Data, Supercomputer y computación cuántica.</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
@@ -218,8 +218,8 @@
                         <div class="schedule__event--time-end"> 15:10 pm</div>
                     </div>
                     <div class="schedule__event--info">
-                            <div class="schedule__event--info-title">Ponente por definir</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-title">Fernando Eduardo Cohaila Villagra</div>
+                            <div class="schedule__event--info-sub">Modernización del estado en el sector justicia</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
@@ -234,7 +234,7 @@
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">Herson Urbina Cayo</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-sub">Transformación digital guiado por datos en Banca Digital</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
@@ -249,7 +249,7 @@
                     </div>
                     <div class="schedule__event--info">
                             <div class="schedule__event--info-title">Andrea Montes Albarracín</div>
-                            <div class="schedule__event--info-sub">Por definir</div>
+                            <div class="schedule__event--info-sub">Introducción a Bases de Datos y SQL</div>
                     </div>
                     <div class="schedule__event--extra">
                             <a class="btn btn-outline" href="#"
