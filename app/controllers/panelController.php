@@ -11,6 +11,10 @@
             View::render('home');
         }
 
+        public function profile(){
+            View::render('profile');
+        }
+
         public function get_asistencia(){
             try{
                 // $this->valdiate_csrf();

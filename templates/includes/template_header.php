@@ -116,7 +116,7 @@
                                 <img src="<?php echo IMAGES.'avatar.png' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="username"></span>
                             </a>
 							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="<?php echo URL.'panel/profile?token=' ?>" id="profile"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
 								<a class="dropdown-item" href=""><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>

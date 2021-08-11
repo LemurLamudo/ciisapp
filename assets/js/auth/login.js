@@ -43,7 +43,12 @@ $(document).ready(function() {
                 document.getElementById("email").value = "";
                 document.getElementById("number").value = "";
 
-                window.location.href = uri + 'panel?token=' + res.data;
+                var codeId = getParameterByName('code');
+                if(codeId != null){
+                  window.location.href = uri + 'panel?token=' + res.data + '&code=' + codeId;
+                }else {
+                    window.location.href = uri + 'panel?token=' + res.data;
+                }
             }
         }).fail( function( err ) {
             console.error(err);
@@ -56,6 +61,13 @@ $(document).ready(function() {
     function validarEmail(email) {
         emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
         return (emailRegex.test(email)) ? true : false;
+    }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 
     function validarNumero(num){

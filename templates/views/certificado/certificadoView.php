@@ -23,7 +23,7 @@
                     </div>
                     <div class="card-body">
                         <div class="row flex-column-reverse flex-xl-row">
-                            <div class="col-xl-8">
+                            <div class="col-xl-9">
                                 <div class="certificate">
                                   <div class="certificate-container">
                                     <div class="certificate-row">
@@ -104,23 +104,23 @@
                                   </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 mb-3 mb-xl-0">
+                            <div class="col-xl-3 mb-3 mb-xl-0">
                                 <h4 class="card-title mt-4 text-center"><b>XVIII POSTMASTER</b></h4>
                                 <h5 class="card-title text-center"><b>Encuentro de egresados</b></h5>
                                 
                                 <!-- <img class="card-img-top mt-2" src="<?php echo IMAGES.'banner.jpg' ?>" alt="Unsplash"> -->
-                                <h4 class="card-title mt-4 px-3"><b>Destinatario del certificado:</b></h4>
-                                <div class="nav-item">
+                                <h4 class="card-title mt-4 px-3 text-center"><b>Destinatario del certificado:</b></h4>
+                                <div class="nav-item text-center">
                                     <a class="nav-link d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                                         <img src="<?php echo IMAGES.'avatar.png' ?>" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark" id="name"></span>
                                     </a>
                                 </div>
-                                <div class="container mt-2">
-                                    <button class="btn btn-light">Descargar</button>
-                                    <button class="btn btn-light">Compartir</button>
+                                <div class="container mt-2 text-center">
+                                    <button class="btn btn-light" id="descargar">Descargar</button>
+                                    <!-- <button class="btn btn-light">Compartir</button> -->
                                 </div>
 
-                                <h4 class="card-title mt-5 text-center px-3"><b><a href="">Actualiza tu certificado</a> con tu nombre correcto, recuerda que solo lo podrás hacer una vez.</b></h4>
+                                <h4 class="card-title mt-5 text-center px-3"><b><a href="<?php echo URL.'panel/profile?token=' ?>" id="profile2">Actualiza tu certificado</a> con tu nombre correcto, recuerda que solo lo podrás hacer una vez.</b></h4>
                             </div>
                         </div>
                     </div>

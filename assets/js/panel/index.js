@@ -61,7 +61,7 @@ async function bee_get_postmaster() {
                                     <p class="card-text">${ponente.name_tema}</p>
                                   </div>
                                 </div>
-                                <div class="col-md-4 d-flex justify-content-center align-items-center"><div class="input-group"><input class="form-control py-2" type="text" placeholder="Ingresa código" name="code" id="code"><button class="btn btn-primary" onclick="marcar_asistencia(${ponente.ponencia_id})">Marcar asistencia</button></div></div>
+                                <div class="col-md-4 d-flex justify-content-center align-items-center"><div class="input-group"><input class="form-control py-2" type="text" placeholder="Ingresa código" name="code" id="code" ><button class="btn btn-primary" onclick="marcar_asistencia(${ponente.ponencia_id})">Marcar asistencia</button></div></div>
                               </div>
                             </div>
                         </div> 
@@ -70,6 +70,19 @@ async function bee_get_postmaster() {
       }
     });
     $ponencias.html(adicional + htmlOptions);
+
+    var codeId = getParameterByName('code');
+    var code = document.getElementById("code");
+    if(codeId != null && code != null){
+      code.value = codeId;
+    }
+  }
+
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
   }
 }
 

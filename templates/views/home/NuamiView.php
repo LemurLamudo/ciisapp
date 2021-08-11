@@ -1,4 +1,5 @@
 <?php require_once INCLUDES.'inc_header.php'; ?>
+
     <main>
         <!-- <section class="hero">
             <div class="container">
@@ -150,3 +151,26 @@
   const player= (typeof Plyr === 'function') ? new Plyr("#player") : null,trailer=document.querySelector(".modal-video");document.querySelector(".video-selector").addEventListener("click",()=>trailer.classList.add("active")),document.querySelector(".modal-video .close").addEventListener("click",()=>{trailer.classList.remove("active"),player.stop()});
 </script>
 <?php require_once INCLUDES.'inc_scripts.php'; ?>
+
+<script>
+    var code = "<?php echo isset($_GET['code'])? $_GET['code'] : ''; ?>";
+    var url = "<?php echo URL ?>";
+    var token = localStorage.getItem("token");
+    
+    if(code != null && url != null && code.length > 0 && token != null){
+        window.location.href = url + 'panel?token=' + token + '&code=' + code;
+    }else if(code != null && code.length > 0){
+        window.location.href = url + 'auth?code=' + code;
+    }
+
+    function parseJwt (token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    
+        return JSON.parse(jsonPayload);
+    };
+    
+ </script>

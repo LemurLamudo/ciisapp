@@ -12,6 +12,12 @@ $(document).ready(function() {
     // document.getElementById("talleres").href= uri + 'talleres?token=' + token;
     // document.getElementById("ponencias").href= uri + 'ponencias?token=' + token;
     document.getElementById("certificado").href= uri + 'certificado?token=' + token;
+    document.getElementById("profile").href= uri + 'panel/profile?token=' + token;
+
+    $profile = document.getElementById("profile2");
+    if($profile != null){
+        $profile.href= uri + 'panel/profile?token=' + token;
+    }
     
     $("#username").text(json.data.name);
     

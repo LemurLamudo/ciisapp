@@ -3,6 +3,10 @@ $(document).ready(function () {
   if (token == null) window.location.href = uri;
   var json = parseJwt(token);
 
+  $("#descargar").click(function() {
+    alertify.notify('Aún no esta disponible','success', 12, null);
+  });
+
   $("#name").text(json.data.name);
   $("#certificate-name").text(json.data.name.toUpperCase());
 
