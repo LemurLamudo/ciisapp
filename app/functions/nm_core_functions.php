@@ -24,7 +24,7 @@
     function validate_token_admin(){
         $info = validate_token();
 
-        if(!$info->data->role == "ROLE_ADMIN"){
+        if($info->data->role != "ROLE_ADMIN"){
             Redirect(URL);
         }
     }
