@@ -66,6 +66,9 @@
                         <span class="align-middle">Certificado</span>
                         </a>
                     </li> 
+					<li class="sidebar-item" style="display:none" id="sorteo">
+                        
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -123,4 +123,18 @@
                 throw $e;
             }
         }
+
+        /**
+         * Update User
+         * @return List<Usuario>
+         */
+        public function all() {
+            $sql = 'SELECT COUNT(asistencia.user_id) AS repetidos, name, email FROM asistencia INNER JOIN users ON users.id = asistencia.user_id GROUP BY asistencia.user_id';
+            
+            try{
+                return ($rows = parent::query($sql, [])) ? $rows : false;
+            } catch(Exception $e) {
+                throw $e;
+            }
+        }
     }

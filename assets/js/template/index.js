@@ -22,10 +22,15 @@ $(document).ready(function() {
     $("#username").text(json.data.name);
     
     if(json.data.role == "ROLE_ADMIN"){
-        var redirect = document.getElementById("l_ponencia");
+        var redirect = document.getElementById("sorteo");
         if(redirect != null){
-            document.getElementById("l_ponencia").style.display = "block";
-            document.getElementById("l_ponencia").href = uri + 'ponencias/listar?token=' + token;
+            document.getElementById("sorteo").style.display = "block";
+            document.getElementById("sorteo").innerHTML = `
+            <a class="sidebar-link" href="${uri}usuario?token=${token}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                <span class="align-middle">Sorteo</span>
+            </a>
+            `;
         }
     }
     
@@ -46,4 +51,9 @@ $(document).ready(function() {
     
         return JSON.parse(jsonPayload);
     };
+
+    // <a class="sidebar-link" href="<?php echo URL.'ponencias?token=' ?>" id="ponencias">
+    //     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus align-middle"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+    //     <span class="align-middle">Ponencias</span>
+    // </a>
 });
