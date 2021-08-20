@@ -14,6 +14,14 @@
         public $password;
         public $status;
 
+        public $entidad;
+        public $nivel;
+        public $especialidad;
+        public $fecha_nacimiento;
+        public $number;
+        public $sugerencia;
+        public $c_update;
+
         /**
          *
          * Model Usuario
@@ -134,6 +142,33 @@
             try{
                 return ($rows = parent::query($sql, [])) ? $rows : false;
             } catch(Exception $e) {
+                throw $e;
+            }
+        }
+
+        /**
+         * Update Usuario
+         */
+        public function update_user(){
+
+            $sql = 'UPDATE users SET name=:name, entidad=:entidad, nivel=:nivel, especialidad=:especialidad, number=:number, sugerencia=:sugerencia, c_update=:c_update, fecha_nacimiento=:fecha_nacimiento, name=:name, email=:email  WHERE id=:id';
+
+            $data = [
+                'id'                =>  $this->id,
+                'entidad'           =>  $this->entidad,
+                'nivel'             =>  $this->nivel,
+                'especialidad'      =>  $this->especialidad,
+                'fecha_nacimiento'  =>  $this->fecha_nacimiento,
+                'number'            =>  $this->number,
+                'sugerencia'        =>  $this->sugerencia,
+                'c_update'          =>  1,
+                'email'             =>  $this->email,
+                'name'              =>  $this->name
+            ];
+    
+            try{
+                return ($rows = parent::query($sql, $data)) ? $rows : false;
+            } catch (Exception $e) {
                 throw $e;
             }
         }
