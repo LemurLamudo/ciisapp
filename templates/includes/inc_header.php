@@ -68,6 +68,7 @@
                           <li class="nav-item"><a class="nav-link" href="http://esis.unjbg.edu.pe/" target="_blank">Nosotros</a></li>
                           <li class="nav-item"><div class="nav-link">Eventos <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg></div>
                             <ul class="sub-menu">
+                              <li><a href="wia" class="sub">Wia</a></li>
                               <li><a href="postmaster" class="sub">Postmaster</a></li>
                               <li><a href="" class="sub">Talleres</a></li>
                               <li><a href="" class="sub">Concursos</a></li>

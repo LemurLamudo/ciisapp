@@ -14,6 +14,7 @@
 
     function validate_token(){
         $token = $_GET["token"];
+
         try{
             return Auth::Check(($token));
         } catch(Exception $e){

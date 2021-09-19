@@ -36,12 +36,8 @@ class Auth
             self::$encrypt
         );
 
-        if($decode->aud !== self::Aud())
-        {
-            throw new Exception("Invalid user logged in.");
-        }else {
-            return $decode;
-        }
+        return $decode;
+        
     }
 
     public static function GetData($token)
