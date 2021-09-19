@@ -2,7 +2,7 @@
 
     class serviceController extends Controller{
         public function __construct(){
-            validate_token();
+    
         }
 
         public function query(){
@@ -13,7 +13,8 @@
             die();
         }
 
-        public function create(){
+        public function create(){        
+            validate_token();
             $apimodel = new ApiModel();
             $input = file_get_contents('php://input');
             $json = json_decode($input);
@@ -22,6 +23,7 @@
         }
 
         public function update(){
+            validate_token();
             $apimodel = new ApiModel();
 
             if(isset($_GET['id'])){
