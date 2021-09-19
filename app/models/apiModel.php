@@ -102,7 +102,7 @@
                         }
                     }
 
-                    $_result = ($rows = parent::query($_query , [])) ? $rows[0] : "";
+                    $_result = ($rows = parent::query($_query , [])) ? $rows : "";
 
                     json_output(json_build(200, $this->ClientResponse($_result, [] ,200), "Query Builder!"));
                 }else {

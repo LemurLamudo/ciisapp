@@ -41,11 +41,18 @@
     define('UPLOADS',       ASSETS.'uploads/');
 
     // credenciales base de datos   =>  desarrollo
+    // define('LDB_ENGINE' ,   'mysql');
+    // define('LDB_HOST'   ,   'bthydn7rmo56eu1mljyz-mysql.services.clever-cloud.com');
+    // define('LDB_NAME'   ,   'bthydn7rmo56eu1mljyz');
+    // define('LDB_USER'   ,   'ug6byayn7iguwuj0');
+    // define('LDB_PASS'   ,   'cw14s2LRSKJ6M2j4EY0K');
+    // define('LDB_CHARSET',   'utf8');
+
     define('LDB_ENGINE' ,   'mysql');
-    define('LDB_HOST'   ,   'bthydn7rmo56eu1mljyz-mysql.services.clever-cloud.com');
-    define('LDB_NAME'   ,   'bthydn7rmo56eu1mljyz');
-    define('LDB_USER'   ,   'ug6byayn7iguwuj0');
-    define('LDB_PASS'   ,   'cw14s2LRSKJ6M2j4EY0K');
+    define('LDB_HOST'   ,   'localhost');
+    define('LDB_NAME'   ,   'ciis2020');
+    define('LDB_USER'   ,   'root');
+    define('LDB_PASS'   ,   '');
     define('LDB_CHARSET',   'utf8');
 
     // credenciales base de datos   =>  producción
